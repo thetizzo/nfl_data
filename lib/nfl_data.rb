@@ -1,5 +1,6 @@
 require "nfl_data/version"
 
+require 'nfl_data/player'
+
 module NflData
-  # Your code goes here...
 end
