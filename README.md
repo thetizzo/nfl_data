@@ -1,6 +1,6 @@
 # NflData
 
-This gem is for parsing data from NFL.com and return it as a JSON blob that can be used for any fantasy related activities you may wish to pursue.
+This gem is for parsing data from NFL.com and returning a JSON blob that can be used for any fantasy related activities you may wish to pursue.
 
 ## Installation
 
