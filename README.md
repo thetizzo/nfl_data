@@ -18,7 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Players
+
+To pull players you can do so by position as follows:
+
+```ruby
+  NflData::API::Player.get_quarterbacks
+
+  NflData::API::Player.get_runningbacks
+
+  NflData::API::Player.get_wide_receivers
+  
+  NflData::API::Player.get_tight_ends
+```
+
+These will return JSON blobs of available players at each position
 
 ## Contributing
 
