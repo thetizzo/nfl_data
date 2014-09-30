@@ -2,6 +2,8 @@
 
 This gem is for parsing data from NFL.com and returning a JSON blob that can be used for any fantasy related activities you may wish to pursue.
 
+This was written by @mikesells and @thetizzo
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -28,7 +30,7 @@ To pull players you can do so by position as follows:
   NflData::API::Player.get_runningbacks
 
   NflData::API::Player.get_wide_receivers
-  
+
   NflData::API::Player.get_tight_ends
 ```
 
