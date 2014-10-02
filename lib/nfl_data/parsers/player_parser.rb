@@ -45,14 +45,14 @@ module NflData
         elements = p.search("td")
         player.position = elements[0].inner_text.strip
         player.number = elements[1].inner_text.strip
-        player.name = elements[2].inner_text.strip
+        name = elements[2].inner_text.strip
         player.status = elements[3].inner_text.strip
         player.team = elements[12].inner_text.strip
 
         #Get NFL.com Unique player id
         player.nfl_player_id = elements[2].to_s.split('/')[3]
 
-        names = player.name.split(',')
+        names = name.split(',')
 
         player.first_name = names[1].strip
         player.last_name = names[0].strip
