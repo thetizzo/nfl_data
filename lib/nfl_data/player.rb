@@ -5,8 +5,8 @@ module NflData
   class Player
     attr_accessor :first_name, :last_name, :full_name, :position, :number, :status, :team, :nfl_player_id
 
-    def to_json
-      JSON.generate({
+    def to_hash
+      {
         first_name: first_name,
         last_name: last_name,
         full_name: full_name,
@@ -15,7 +15,7 @@ module NflData
         status: status,
         team: team,
         nfl_player_id: nfl_player_id
-        })
+      }
     end
 
   end

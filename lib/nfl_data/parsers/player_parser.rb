@@ -2,13 +2,36 @@ require 'nokogiri'
 
 module NflData
   class PlayerParser
+    attr_reader :base_url
 
     def initialize
-      @url = "http://www.nfl.com/players/search?category=position&conferenceAbbr=null&playerType=current&conference=ALL&filter="
+      @base_url = "http://www.nfl.com/players/search?category=position&conferenceAbbr=null&playerType=current&conference=ALL&filter="
     end
 
     def get_by_position(position)
-      baseurl = @url + position
+      case position
+      when :quarterbacks
+        { position => get('quarterback') }
+      when :runningbacks
+        { position => get('runningback') }
+      when :wide_receivers
+        { position => get('widereceiver') }
+      when :tight_ends
+        { position => get('tightend') }
+      when :all
+        {
+          quarterbacks: get('quarterback'),
+          runningbacks: get('runningback'),
+          wide_receivers: get('widereceiver'),
+          tight_ends: get('tightend')
+        }
+      end
+    end
+
+    private
+
+    def get(position)
+      baseurl = @base_url + position
       url = baseurl
       returnVal = []
       page_num = 1
@@ -24,7 +47,7 @@ module NflData
         url += page_num.to_s
       end
 
-      returnVal.flatten
+      returnVal.flatten.map{ |player| player.to_hash }
     end
 
     def update_or_create_players(url)

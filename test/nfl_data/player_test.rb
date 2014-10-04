@@ -1,6 +1,6 @@
 require 'test_helper'
 
-describe NflData::Player do
+describe Player do
   before do
     @player = NflData::Player.new
   end
@@ -41,7 +41,7 @@ describe NflData::Player do
     @player.must_respond_to :nfl_player_id
   end
 
-  describe 'to_json' do
+  describe 'to_hash' do
     before do
       @player.first_name = 'John'
       @player.last_name = 'Elway'
@@ -53,8 +53,8 @@ describe NflData::Player do
       @player.nfl_player_id = '123'
     end
 
-    def valid_player_json
-      JSON.generate({
+    def valid_player_hash
+      {
         first_name: 'John',
         last_name: 'Elway',
         full_name: 'John Elway',
@@ -63,11 +63,11 @@ describe NflData::Player do
         status: 'Retired',
         team: 'Broncos',
         nfl_player_id: '123'
-        })
+      }
     end
 
-    it 'can return itself as JSON' do
-      @player.to_json.must_equal valid_player_json
+    it 'can return itself as hash' do
+      @player.to_hash.must_equal valid_player_hash
     end
 
   end

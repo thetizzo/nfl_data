@@ -2,31 +2,38 @@ module NflData
   module API
     class Player
 
+      def initialize
+        @parser = PlayerParser.new
+      end
+
+      def get(position)
+        @parser.get_by_position(position).to_json
+      end
+
       class << self
-        def positions
-          ['quarterback', 'runningback', 'widereceiver', 'tightend']
+
+        def get_all
+          self.new.get(:all)
         end
 
         def get_quarterbacks
-          players = PlayerParser.new.get_by_position('quarterback').map { |player| player.to_json }
-          JSON.generate({quarterbacks: players})
+          self.new.get(:quarterbacks)
         end
 
         def get_runningbacks
-          players = PlayerParser.new.get_by_position('runningback').map { |player| player.to_json }
-          JSON.generate({runningbacks: players})
+          self.new.get(:runningbacks)
         end
 
         def get_wide_receivers
-          players = PlayerParser.new.get_by_position('widereceiver').map { |player| player.to_json }
-          JSON.generate({wide_receivers: players})
+          self.new.get(:wide_receivers)
         end
 
         def get_tight_ends
-          players = PlayerParser.new.get_by_position('tightend').map { |player| player.to_json }
-          JSON.generate({tight_ends: players})
+          self.new.get(:tight_ends)
         end
+
       end
+
     end
   end
 end
