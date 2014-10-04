@@ -25,6 +25,8 @@ Or install it yourself as:
 To pull players you can do so by position as follows:
 
 ```ruby
+  NflData::API::Player.get_all
+  
   NflData::API::Player.get_quarterbacks
 
   NflData::API::Player.get_runningbacks

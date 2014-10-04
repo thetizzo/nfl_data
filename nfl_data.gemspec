@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.version       = NflData::VERSION
   spec.authors       = ["thetizzo"]
   spec.email         = ["j.m.taylor1@gmail.com"]
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/thetizzo/nfl_data"
   spec.license       = "MIT"
   spec.summary       = %q{Grabber for NFL data that is useful for fantasy purposes from NFL.com}
   spec.description   = %q{This gem is a way to get NFL data for fantasy purposes.}
