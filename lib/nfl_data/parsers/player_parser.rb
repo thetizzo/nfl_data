@@ -1,6 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
-
 module NflData
   class PlayerParser
     attr_reader :base_url
@@ -54,9 +51,6 @@ module NflData
     def update_or_create_players(url)
       # puts "Pulling from url = #{url}"
       doc = open(url) { |f| Nokogiri(f) }
-      if doc.nil?
-        return 0
-      end
 
       #NFL.com stores players in 2 types of rows. Class = Odd or Even. This pulls them all.
       odds = doc.search("tr.odd")

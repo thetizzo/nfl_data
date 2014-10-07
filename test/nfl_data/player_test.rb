@@ -1,8 +1,9 @@
 require 'test_helper'
 
 describe Player do
+
   before do
-    @player = NflData::Player.new
+    @player = Player.new
   end
 
   after do

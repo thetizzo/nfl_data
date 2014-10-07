@@ -1,5 +1,3 @@
-require 'json'
-
 module NflData
 
   class Player
@@ -19,4 +17,5 @@ module NflData
     end
 
   end
+
 end
