@@ -23,11 +23,11 @@ http_interactions:
       Content-Language:
       - en-US
       Cache-Control:
-      - max-age=3566
+      - max-age=3578
       Expires:
-      - Tue, 07 Oct 2014 04:14:57 GMT
+      - Tue, 07 Oct 2014 07:52:21 GMT
       Date:
-      - Tue, 07 Oct 2014 03:15:31 GMT
+      - Tue, 07 Oct 2014 06:52:43 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -609,14 +609,14 @@ http_interactions:
         \"#hdscorestripContainer\"\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t});\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t\n\n\t\t</div>\n\n\t\t\n\t\t\n\t\t\t<div
         id=\"page-top-ad\">\n\t\t\t<!-- bannerAdType: \"728x90\" -->\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t
         \t\n\t\t\t\t \t\n\t\t\t\t \t\n\t\t\t\t \t  \r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651730517top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664763389top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['728',
         '90']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651730517top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664763389top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '728',\r\n\t\t\t\t\t\t\theight: '90',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651730517top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
+        \"#ad1412664763389top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
         1]);\r\n\t\t\t\t\t\tadConf.interstitial = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive
         === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd
         = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\n\t\t\t\t
@@ -858,9 +858,9 @@ http_interactions:
         class=\"tbdy\">0</td>\n<td class=\"tbdy1\"><a href=\"/teams/st.louisrams/profile?team=STL\">STL</a></td></tr>\n<tr
         class=\"even\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">89</td>\n<td><a
         href=\"/player/dougbaldwin/2530747/profile\">Baldwin, Doug</a></td>\n<td class=\"tbdy\">ACT</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">10</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">105</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">10.5</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">14</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">155</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">11.1</td>\n<td
         class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">0</td>\n<td
         class=\"tbdy1\"><a href=\"/teams/seattleseahawks/profile?team=SEA\">SEA</a></td></tr>\n<tr
         class=\"odd\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">9</td>\n<td><a
@@ -1306,14 +1306,14 @@ http_interactions:
         END PAGE rightrail/otherlinks -->\r\n\r\n\t\t<div class=\"ad-section\">\r\n\t\t\t<p
         class=\"ad-below\"><img src=\"http://i.nflcdn.com/static/site/6.3/img/advertisment-notice-top.gif\"
         alt=\"The next object is an advertisement\" /></p>\r\n\t\t\t\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651730492rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664763367rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['160',
         '600']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651730492rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664763367rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '160',\r\n\t\t\t\t\t\t\theight: '600',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651730492rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
+        \"#ad1412664763367rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
         === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1, 1]);\r\n\t\t\t\t\t\tadConf.interstitial
         = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive
         = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<!--
@@ -1468,7 +1468,7 @@ http_interactions:
         function (err) {\n    \t\tif (err) {\n       \t\tY.log('Error loading JS:
         ' + err[0].error, 'error');\n\t        return;\n  \t  \t}\n\n    \t\tY.Get.js(\"http://s.nflcdn.com/static/site/6.3/scripts/foresee-desktop/foresee-trigger.js\");\n\t\t\t});\n\n\t\t})\n\t</script>\n\t<script>(function(w){if(w._satellite){_satellite.pageBottom();}}(window))</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 07 Oct 2014 03:15:30 GMT
+  recorded_at: Tue, 07 Oct 2014 06:52:42 GMT
 - request:
     method: get
     uri: http://www.nfl.com/players/search?category=position&conference=ALL&conferenceAbbr=null&d-447263-p=2&filter=widereceiver&playerType=current
@@ -1492,11 +1492,11 @@ http_interactions:
       Content-Language:
       - en-US
       Cache-Control:
-      - max-age=3561
+      - max-age=3600
       Expires:
-      - Tue, 07 Oct 2014 04:14:55 GMT
+      - Tue, 07 Oct 2014 07:52:47 GMT
       Date:
-      - Tue, 07 Oct 2014 03:15:34 GMT
+      - Tue, 07 Oct 2014 06:52:47 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -2078,14 +2078,14 @@ http_interactions:
         \"#hdscorestripContainer\"\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t});\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t\n\n\t\t</div>\n\n\t\t\n\t\t\n\t\t\t<div
         id=\"page-top-ad\">\n\t\t\t<!-- bannerAdType: \"728x90\" -->\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t
         \t\n\t\t\t\t \t\n\t\t\t\t \t\n\t\t\t\t \t  \r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651734302top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664767260top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['728',
         '90']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651734302top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664767260top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '728',\r\n\t\t\t\t\t\t\theight: '90',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651734302top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
+        \"#ad1412664767260top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
         1]);\r\n\t\t\t\t\t\tadConf.interstitial = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive
         === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd
         = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\n\t\t\t\t
@@ -2482,9 +2482,9 @@ http_interactions:
         class=\"tbdy\">--</td>\n<td class=\"tbdy1\"><a href=\"/teams/newenglandpatriots/profile?team=NE\">NE</a></td></tr>\n<tr
         class=\"even\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">88</td>\n<td><a
         href=\"/player/pierregarcon/2346/profile\">Garcon, Pierre</a></td>\n<td class=\"tbdy\">ACT</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">24</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">255</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">10.6</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">26</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">278</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">10.7</td>\n<td
         class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">1</td>\n<td
         class=\"tbdy1\"><a href=\"/teams/washingtonredskins/profile?team=WAS\">WAS</a></td></tr>\n<tr
         class=\"odd\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">10</td>\n<td><a
@@ -2692,9 +2692,9 @@ http_interactions:
         class=\"tbdy\">--</td>\n<td class=\"tbdy1\"><a href=\"/teams/newyorkgiants/profile?team=NYG\">NYG</a></td></tr>\n<tr
         class=\"even\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">11</td>\n<td><a
         href=\"/player/percyharvin/80425/profile\">Harvin, Percy</a></td>\n<td class=\"tbdy\">ACT</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">15</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">106</td>\n<td
-        class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">7.1</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">19</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">133</td>\n<td
+        class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">7.0</td>\n<td
         class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">0</td>\n<td
         class=\"tbdy1\"><a href=\"/teams/seattleseahawks/profile?team=SEA\">SEA</a></td></tr>\n<tr
         class=\"odd\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">7</td>\n<td><a
@@ -2776,14 +2776,14 @@ http_interactions:
         END PAGE rightrail/otherlinks -->\r\n\r\n\t\t<div class=\"ad-section\">\r\n\t\t\t<p
         class=\"ad-below\"><img src=\"http://i.nflcdn.com/static/site/6.3/img/advertisment-notice-top.gif\"
         alt=\"The next object is an advertisement\" /></p>\r\n\t\t\t\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651734278rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664767235rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['160',
         '600']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651734278rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664767235rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '160',\r\n\t\t\t\t\t\t\theight: '600',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651734278rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
+        \"#ad1412664767235rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
         === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1, 1]);\r\n\t\t\t\t\t\tadConf.interstitial
         = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive
         = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<!--
@@ -2938,7 +2938,7 @@ http_interactions:
         function (err) {\n    \t\tif (err) {\n       \t\tY.log('Error loading JS:
         ' + err[0].error, 'error');\n\t        return;\n  \t  \t}\n\n    \t\tY.Get.js(\"http://s.nflcdn.com/static/site/6.3/scripts/foresee-desktop/foresee-trigger.js\");\n\t\t\t});\n\n\t\t})\n\t</script>\n\t<script>(function(w){if(w._satellite){_satellite.pageBottom();}}(window))</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 07 Oct 2014 03:15:34 GMT
+  recorded_at: Tue, 07 Oct 2014 06:52:46 GMT
 - request:
     method: get
     uri: http://www.nfl.com/players/search?category=position&conference=ALL&conferenceAbbr=null&d-447263-p=3&filter=widereceiver&playerType=current
@@ -2962,11 +2962,11 @@ http_interactions:
       Content-Language:
       - en-US
       Cache-Control:
-      - max-age=3600
+      - max-age=3543
       Expires:
-      - Tue, 07 Oct 2014 04:15:35 GMT
+      - Tue, 07 Oct 2014 07:51:50 GMT
       Date:
-      - Tue, 07 Oct 2014 03:15:35 GMT
+      - Tue, 07 Oct 2014 06:52:47 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -3548,14 +3548,14 @@ http_interactions:
         \"#hdscorestripContainer\"\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t});\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t\n\n\t\t</div>\n\n\t\t\n\t\t\n\t\t\t<div
         id=\"page-top-ad\">\n\t\t\t<!-- bannerAdType: \"728x90\" -->\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t
         \t\n\t\t\t\t \t\n\t\t\t\t \t\n\t\t\t\t \t  \r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651735110top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664767857top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['728',
         '90']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651735110top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664767857top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '728',\r\n\t\t\t\t\t\t\theight: '90',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651735110top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
+        \"#ad1412664767857top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
         1]);\r\n\t\t\t\t\t\tadConf.interstitial = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive
         === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd
         = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\n\t\t\t\t
@@ -3834,10 +3834,10 @@ http_interactions:
         class=\"odd\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">11</td>\n<td><a
         href=\"/player/deseanjackson/1581/profile\">Jackson, DeSean</a></td>\n<td
         class=\"tbdy\">ACT</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">15</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">207</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">13.8</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">1</td>\n<td class=\"tbdy1\"><a href=\"/teams/washingtonredskins/profile?team=WAS\">WAS</a></td></tr>\n<tr
+        class=\"tbdy\">20</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">364</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">18.2</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">2</td>\n<td class=\"tbdy1\"><a href=\"/teams/washingtonredskins/profile?team=WAS\">WAS</a></td></tr>\n<tr
         class=\"even\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">89</td>\n<td><a
         href=\"/player/jerrelljackson/2533338/profile\">Jackson, Jerrell</a></td>\n<td
         class=\"tbdy\">CUT</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td
@@ -4016,10 +4016,10 @@ http_interactions:
         class=\"odd\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">15</td>\n<td><a
         href=\"/player/jermainekearse/2532887/profile\">Kearse, Jermaine</a></td>\n<td
         class=\"tbdy\">ACT</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">7</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">91</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">13.0</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">0</td>\n<td class=\"tbdy1\"><a href=\"/teams/seattleseahawks/profile?team=SEA\">SEA</a></td></tr>\n<tr
+        class=\"tbdy\">8</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">106</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">13.3</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">1</td>\n<td class=\"tbdy1\"><a href=\"/teams/seattleseahawks/profile?team=SEA\">SEA</a></td></tr>\n<tr
         class=\"even\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">11</td>\n<td><a
         href=\"/player/jeremykerley/2495189/profile\">Kerley, Jeremy</a></td>\n<td
         class=\"tbdy\">ACT</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td
@@ -4246,14 +4246,14 @@ http_interactions:
         END PAGE rightrail/otherlinks -->\r\n\r\n\t\t<div class=\"ad-section\">\r\n\t\t\t<p
         class=\"ad-below\"><img src=\"http://i.nflcdn.com/static/site/6.3/img/advertisment-notice-top.gif\"
         alt=\"The next object is an advertisement\" /></p>\r\n\t\t\t\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651735080rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664767830rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['160',
         '600']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651735080rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664767830rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '160',\r\n\t\t\t\t\t\t\theight: '600',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651735080rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
+        \"#ad1412664767830rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
         === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1, 1]);\r\n\t\t\t\t\t\tadConf.interstitial
         = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive
         = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<!--
@@ -4408,7 +4408,7 @@ http_interactions:
         function (err) {\n    \t\tif (err) {\n       \t\tY.log('Error loading JS:
         ' + err[0].error, 'error');\n\t        return;\n  \t  \t}\n\n    \t\tY.Get.js(\"http://s.nflcdn.com/static/site/6.3/scripts/foresee-desktop/foresee-trigger.js\");\n\t\t\t});\n\n\t\t})\n\t</script>\n\t<script>(function(w){if(w._satellite){_satellite.pageBottom();}}(window))</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 07 Oct 2014 03:15:35 GMT
+  recorded_at: Tue, 07 Oct 2014 06:52:47 GMT
 - request:
     method: get
     uri: http://www.nfl.com/players/search?category=position&conference=ALL&conferenceAbbr=null&d-447263-p=4&filter=widereceiver&playerType=current
@@ -4434,9 +4434,9 @@ http_interactions:
       Cache-Control:
       - max-age=3600
       Expires:
-      - Tue, 07 Oct 2014 04:15:38 GMT
+      - Tue, 07 Oct 2014 07:52:51 GMT
       Date:
-      - Tue, 07 Oct 2014 03:15:38 GMT
+      - Tue, 07 Oct 2014 06:52:51 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -5018,14 +5018,14 @@ http_interactions:
         \"#hdscorestripContainer\"\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t});\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t\n\n\t\t</div>\n\n\t\t\n\t\t\n\t\t\t<div
         id=\"page-top-ad\">\n\t\t\t<!-- bannerAdType: \"728x90\" -->\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t
         \t\n\t\t\t\t \t\n\t\t\t\t \t\n\t\t\t\t \t  \r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651738374top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664770999top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['728',
         '90']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651738374top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664770999top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '728',\r\n\t\t\t\t\t\t\theight: '90',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651738374top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
+        \"#ad1412664770999top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
         1]);\r\n\t\t\t\t\t\tadConf.interstitial = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive
         === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd
         = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\n\t\t\t\t
@@ -5570,10 +5570,10 @@ http_interactions:
         class=\"odd\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">12</td>\n<td><a
         href=\"/player/andreroberts/497320/profile\">Roberts, Andre</a></td>\n<td
         class=\"tbdy\">ACT</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">10</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">135</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">13.5</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td
-        class=\"tbdy\">1</td>\n<td class=\"tbdy1\"><a href=\"/teams/washingtonredskins/profile?team=WAS\">WAS</a></td></tr>\n<tr
+        class=\"tbdy\">15</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tYDS\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">164</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tAVG\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">10.9</td>\n<td class=\"ra\">\r\n\t\t\t\t\t\t\t\tTDS\r\n\t\t\t\t\t\t\t</td>\n<td
+        class=\"tbdy\">2</td>\n<td class=\"tbdy1\"><a href=\"/teams/washingtonredskins/profile?team=WAS\">WAS</a></td></tr>\n<tr
         class=\"even\">\n<td class=\"tbdy\">WR</td>\n<td class=\"tbdy\">85</td>\n<td><a
         href=\"/player/sethroberts/2550597/profile\">Roberts, Seth</a></td>\n<td class=\"tbdy\">DEV</td>\n<td
         class=\"ra\">\r\n\t\t\t\t\t\t\t\tREC\r\n\t\t\t\t\t\t\t</td>\n<td class=\"tbdy\">--</td>\n<td
@@ -5716,14 +5716,14 @@ http_interactions:
         END PAGE rightrail/otherlinks -->\r\n\r\n\t\t<div class=\"ad-section\">\r\n\t\t\t<p
         class=\"ad-below\"><img src=\"http://i.nflcdn.com/static/site/6.3/img/advertisment-notice-top.gif\"
         alt=\"The next object is an advertisement\" /></p>\r\n\t\t\t\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651738349rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664770974rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['160',
         '600']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651738349rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664770974rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '160',\r\n\t\t\t\t\t\t\theight: '600',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651738349rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
+        \"#ad1412664770974rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
         === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1, 1]);\r\n\t\t\t\t\t\tadConf.interstitial
         = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive
         = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<!--
@@ -5878,7 +5878,7 @@ http_interactions:
         function (err) {\n    \t\tif (err) {\n       \t\tY.log('Error loading JS:
         ' + err[0].error, 'error');\n\t        return;\n  \t  \t}\n\n    \t\tY.Get.js(\"http://s.nflcdn.com/static/site/6.3/scripts/foresee-desktop/foresee-trigger.js\");\n\t\t\t});\n\n\t\t})\n\t</script>\n\t<script>(function(w){if(w._satellite){_satellite.pageBottom();}}(window))</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 07 Oct 2014 03:15:38 GMT
+  recorded_at: Tue, 07 Oct 2014 06:52:50 GMT
 - request:
     method: get
     uri: http://www.nfl.com/players/search?category=position&conference=ALL&conferenceAbbr=null&d-447263-p=5&filter=widereceiver&playerType=current
@@ -5904,9 +5904,9 @@ http_interactions:
       Cache-Control:
       - max-age=3600
       Expires:
-      - Tue, 07 Oct 2014 04:15:38 GMT
+      - Tue, 07 Oct 2014 07:52:55 GMT
       Date:
-      - Tue, 07 Oct 2014 03:15:38 GMT
+      - Tue, 07 Oct 2014 06:52:55 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -6488,14 +6488,14 @@ http_interactions:
         \"#hdscorestripContainer\"\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t});\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t\n\n\t\t</div>\n\n\t\t\n\t\t\n\t\t\t<div
         id=\"page-top-ad\">\n\t\t\t<!-- bannerAdType: \"728x90\" -->\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t
         \t\n\t\t\t\t \t\n\t\t\t\t \t\n\t\t\t\t \t  \r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651738911top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664774999top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['728',
         '90']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651738911top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664774999top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '728',\r\n\t\t\t\t\t\t\theight: '90',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651738911top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
+        \"#ad1412664774999top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
         1]);\r\n\t\t\t\t\t\tadConf.interstitial = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive
         === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd
         = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\n\t\t\t\t
@@ -7186,14 +7186,14 @@ http_interactions:
         END PAGE rightrail/otherlinks -->\r\n\r\n\t\t<div class=\"ad-section\">\r\n\t\t\t<p
         class=\"ad-below\"><img src=\"http://i.nflcdn.com/static/site/6.3/img/advertisment-notice-top.gif\"
         alt=\"The next object is an advertisement\" /></p>\r\n\t\t\t\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651738887rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664774973rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['160',
         '600']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651738887rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664774973rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '160',\r\n\t\t\t\t\t\t\theight: '600',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651738887rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
+        \"#ad1412664774973rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
         === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1, 1]);\r\n\t\t\t\t\t\tadConf.interstitial
         = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive
         = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<!--
@@ -7348,7 +7348,7 @@ http_interactions:
         function (err) {\n    \t\tif (err) {\n       \t\tY.log('Error loading JS:
         ' + err[0].error, 'error');\n\t        return;\n  \t  \t}\n\n    \t\tY.Get.js(\"http://s.nflcdn.com/static/site/6.3/scripts/foresee-desktop/foresee-trigger.js\");\n\t\t\t});\n\n\t\t})\n\t</script>\n\t<script>(function(w){if(w._satellite){_satellite.pageBottom();}}(window))</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 07 Oct 2014 03:15:38 GMT
+  recorded_at: Tue, 07 Oct 2014 06:52:54 GMT
 - request:
     method: get
     uri: http://www.nfl.com/players/search?category=position&conference=ALL&conferenceAbbr=null&d-447263-p=6&filter=widereceiver&playerType=current
@@ -7374,9 +7374,9 @@ http_interactions:
       Cache-Control:
       - max-age=3600
       Expires:
-      - Tue, 07 Oct 2014 04:15:39 GMT
+      - Tue, 07 Oct 2014 07:52:55 GMT
       Date:
-      - Tue, 07 Oct 2014 03:15:39 GMT
+      - Tue, 07 Oct 2014 06:52:55 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -7958,14 +7958,14 @@ http_interactions:
         \"#hdscorestripContainer\"\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t});\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t\n\n\t\t</div>\n\n\t\t\n\t\t\n\t\t\t<div
         id=\"page-top-ad\">\n\t\t\t<!-- bannerAdType: \"728x90\" -->\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t
         \t\n\t\t\t\t \t\n\t\t\t\t \t\n\t\t\t\t \t  \r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651739587top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664775438top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['728',
         '90']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651739587top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664775438top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '728',\r\n\t\t\t\t\t\t\theight: '90',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651739587top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
+        \"#ad1412664775438top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
         1]);\r\n\t\t\t\t\t\tadConf.interstitial = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive
         === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd
         = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\n\t\t\t\t
@@ -8187,14 +8187,14 @@ http_interactions:
         END PAGE rightrail/otherlinks -->\r\n\r\n\t\t<div class=\"ad-section\">\r\n\t\t\t<p
         class=\"ad-below\"><img src=\"http://i.nflcdn.com/static/site/6.3/img/advertisment-notice-top.gif\"
         alt=\"The next object is an advertisement\" /></p>\r\n\t\t\t\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651739562rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664775415rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['160',
         '600']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651739562rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664775415rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '160',\r\n\t\t\t\t\t\t\theight: '600',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651739562rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
+        \"#ad1412664775415rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
         === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1, 1]);\r\n\t\t\t\t\t\tadConf.interstitial
         = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive
         = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<!--
@@ -8349,7 +8349,7 @@ http_interactions:
         function (err) {\n    \t\tif (err) {\n       \t\tY.log('Error loading JS:
         ' + err[0].error, 'error');\n\t        return;\n  \t  \t}\n\n    \t\tY.Get.js(\"http://s.nflcdn.com/static/site/6.3/scripts/foresee-desktop/foresee-trigger.js\");\n\t\t\t});\n\n\t\t})\n\t</script>\n\t<script>(function(w){if(w._satellite){_satellite.pageBottom();}}(window))</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 07 Oct 2014 03:15:39 GMT
+  recorded_at: Tue, 07 Oct 2014 06:52:54 GMT
 - request:
     method: get
     uri: http://www.nfl.com/players/search?category=position&conference=ALL&conferenceAbbr=null&d-447263-p=7&filter=widereceiver&playerType=current
@@ -8373,11 +8373,11 @@ http_interactions:
       Content-Language:
       - en-US
       Cache-Control:
-      - max-age=3583
+      - max-age=3600
       Expires:
-      - Tue, 07 Oct 2014 04:15:23 GMT
+      - Tue, 07 Oct 2014 07:52:55 GMT
       Date:
-      - Tue, 07 Oct 2014 03:15:40 GMT
+      - Tue, 07 Oct 2014 06:52:55 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -8959,14 +8959,14 @@ http_interactions:
         \"#hdscorestripContainer\"\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t});\n\t\t\t\t\t</script>\n\t\t\t\t</div>\n\t\t\t\n\n\t\t</div>\n\n\t\t\n\t\t\n\t\t\t<div
         id=\"page-top-ad\">\n\t\t\t<!-- bannerAdType: \"728x90\" -->\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t
         \t\n\t\t\t\t \t\n\t\t\t\t \t\n\t\t\t\t \t  \r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651740189top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664775722top\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['728',
         '90']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651740189top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664775722top',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.players/search&t=slot%3Dtop%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '728',\r\n\t\t\t\t\t\t\theight: '90',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651740189top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
+        \"#ad1412664775722top\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1,
         1]);\r\n\t\t\t\t\t\tadConf.interstitial = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive
         === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd
         = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\n\t\t\t\t
@@ -9112,14 +9112,14 @@ http_interactions:
         END PAGE rightrail/otherlinks -->\r\n\r\n\t\t<div class=\"ad-section\">\r\n\t\t\t<p
         class=\"ad-below\"><img src=\"http://i.nflcdn.com/static/site/6.3/img/advertisment-notice-top.gif\"
         alt=\"The next object is an advertisement\" /></p>\r\n\t\t\t\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\r\n\t\t<div
-        class=\"adcontainer\" id=\"ad1412651740165rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
+        class=\"adcontainer\" id=\"ad1412664775693rightrailfirst\">\r\n\t\t\t\r\n\t\t\t<script>\r\n\t\t\t\t//
         TODO: do not use 'path' attr, use 'targeting' attr.\r\n\t\t\t\tnfl.use(\"ads-v3\",
         function (Y) {\r\n\t\t\t\t\tvar type = '',\r\n\t\t\t\t\t\tsizes = [['160',
         '600']],\r\n\t\t\t\t\t\tresponsive = '',\r\n\t\t\t\t\t\tmapping = '',\r\n\t\t\t\t\t\tAds
         = Y.NFL.Ads,\r\n\t\t\t\t\t\tAd,\r\n\t\t\t\t\t\tadConf = {\r\n\t\t\t\t\t\t\tid:
-        'ad1412651740165rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
+        'ad1412664775693rightrailfirst',\r\n\t\t\t\t\t\t\tpath: 'http://pubads.g.doubleclick.net/gampad/ads?sz=160x600&iu=/4595/nfl.players/search&t=slot%3Drightrailfirst%26url%3Dsearch%26kw%3Dwidereceiver%26s1%3Dsearch&c={correlator}',\r\n\t\t\t\t\t\t\twidth:
         '160',\r\n\t\t\t\t\t\t\theight: '600',\r\n\t\t\t\t\t\t\tsizes: sizes,\r\n\t\t\t\t\t\t\trender:
-        \"#ad1412651740165rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
+        \"#ad1412664775693rightrailfirst\"\r\n\t\t\t\t\t\t};\r\n\r\n\t\t\t\t\tif(type
         === 'interstitial'){\r\n\t\t\t\t\t\tadConf.sizes.push([1, 1]);\r\n\t\t\t\t\t\tadConf.interstitial
         = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif(responsive === 'true' && mapping){\r\n\t\t\t\t\t\tadConf.responsive
         = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t}\r\n\t\t\t\t\tAd = new Ads.Ad(adConf);\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t});\r\n\t\t\t</script>\r\n\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<!--
@@ -9274,5 +9274,5 @@ http_interactions:
         function (err) {\n    \t\tif (err) {\n       \t\tY.log('Error loading JS:
         ' + err[0].error, 'error');\n\t        return;\n  \t  \t}\n\n    \t\tY.Get.js(\"http://s.nflcdn.com/static/site/6.3/scripts/foresee-desktop/foresee-trigger.js\");\n\t\t\t});\n\n\t\t})\n\t</script>\n\t<script>(function(w){if(w._satellite){_satellite.pageBottom();}}(window))</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 07 Oct 2014 03:15:40 GMT
+  recorded_at: Tue, 07 Oct 2014 06:52:55 GMT
 recorded_with: VCR 2.9.3
