@@ -26,7 +26,7 @@ To pull players you can do so by position as follows:
 
 ```ruby
   NflData::API::Player.get_all
-  
+
   NflData::API::Player.get_quarterbacks
 
   NflData::API::Player.get_runningbacks
@@ -36,7 +36,23 @@ To pull players you can do so by position as follows:
   NflData::API::Player.get_tight_ends
 ```
 
-These will return JSON blobs of available players at each position
+These will return JSON.
+
+### Statlines
+
+To pull statlines you can do so by passing a week and a year.
+
+```ruby
+  NflData::API::Statline.get_all(1, 2014)
+
+  NflData::API::Statline.get_passing(1, 2014)
+
+  NflData::API::Statline.get_rushing(1, 2014)
+
+  NflData::API::Statline.get_receiving(1, 2014)
+```
+
+This will return JSON.
 
 ## Contributing
 
