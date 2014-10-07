@@ -7,24 +7,24 @@ module NflData
       end
 
       def get(week, year, stat_type)
-        @parser.get(week, year, stat_type)
+        @parser.get(week, year, stat_type).to_json
       end
 
       class << self
-        def get_all_by_week_and_year(week, year)
-          self.new.get(week, year)
+        def get_all(week, year)
+          self.new.get(week, year, :all)
         end
 
-        def get_passing_by_week_and_year(week, year)
+        def get_passing(week, year)
           self.new.get(week, year, :passing)
         end
 
-        def get_rushing_by_week_and_year(week, year)
+        def get_rushing(week, year)
           self.new.get(week, year, :rushing)
         end
 
-        def get_receiving_by_week_and_year(week, year)
-          slef.new.get(week, year, :receiving)
+        def get_receiving(week, year)
+          self.new.get(week, year, :receiving)
         end
       end
     end
