@@ -20,6 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
+To use this gem there are some simple calls that can be made.  Everything should return JSON.
+
 ### Players
 
 To pull players you can do so by position as follows:
@@ -36,11 +38,9 @@ To pull players you can do so by position as follows:
   NflData::API::Player.get_tight_ends
 ```
 
-These will return JSON.
-
 ### Statlines
 
-To pull statlines you can do so by passing a week and a year.
+To pull statlines you can do so by passing a week and a year:
 
 ```ruby
   NflData::API::Statline.get_all(1, 2014)
@@ -51,8 +51,6 @@ To pull statlines you can do so by passing a week and a year.
 
   NflData::API::Statline.get_receiving(1, 2014)
 ```
-
-This will return JSON.
 
 ## Contributing
 
