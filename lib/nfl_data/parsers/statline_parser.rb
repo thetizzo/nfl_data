@@ -12,8 +12,6 @@ module NflData
         grab_week(week, year, 'Rushing')
       when :receiving
         grab_week(week, year, 'Receiving')
-      when :all
-        ['Rushing', 'Receiving', 'Passing'].map{|stat| grab_week(week, year, stat)}.flatten
       end
     end
 

@@ -31,12 +31,5 @@ describe StatlineParser do
       end
     end
 
-    it 'should get all statlines' do
-      VCR.use_cassette('all_stats') do
-        response = @parser.get(4, 2014, :all)
-        response.count.must_equal 350
-      end
-    end
-
   end
 end
