@@ -14,9 +14,15 @@ describe TeamParser do
   end
 
   describe 'get_by_year' do
-    it 'should get all the teams for that year' do
-      VCR.use_cassette('teams') do
-        @parser.get_by_year(2014).count.must_equal 32
+    it 'should get all the teams for year without schedule' do
+      VCR.use_cassette('teams_without_schedule') do
+        @parser.get_by_year(2014, false).count.must_equal 32
+      end
+    end
+
+    it 'should get all the teams for year with schedule' do
+      VCR.use_cassette('teams_with_schedule') do
+        @parser.get_by_year(2014, true).count.must_equal 32
       end
     end
   end

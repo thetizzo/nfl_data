@@ -52,10 +52,12 @@ Pull statlines by week and year:
 
 ### Teams
 
-Pull teams:
+Pull teams by year with or without schedules:
 
 ```ruby
-  NflData::API::Team.get_all
+  NflData::API::Team.get_all(2014)
+  
+  NflData::API::Team.get_all_with_schedule(2014)
 ```
 
 ## Contributing

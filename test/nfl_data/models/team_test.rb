@@ -26,14 +26,14 @@ describe Team do
     before do
       @team.name = 'Denver Broncos'
       @team.short_name = 'DEN'
-      @team.schedule = []
+      @team.schedule = Team::Schedule.new
     end
 
     def valid_player_hash
       {
         name: 'Denver Broncos',
         short_name: 'DEN',
-        schedule: nil
+        schedule: []
       }
     end
 
