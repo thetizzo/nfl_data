@@ -24,7 +24,7 @@ To use this gem there are some simple calls that can be made.  Everything should
 
 ### Players
 
-To pull players you can do so by position as follows:
+Pull players by position:
 
 ```ruby
   NflData::API::Player.get_all
@@ -40,7 +40,7 @@ To pull players you can do so by position as follows:
 
 ### Statlines
 
-To pull statlines you can do so by passing a week and a year:
+Pull statlines by week and year:
 
 ```ruby
   NflData::API::Statline.get_passing(1, 2014)
@@ -48,6 +48,14 @@ To pull statlines you can do so by passing a week and a year:
   NflData::API::Statline.get_rushing(1, 2014)
 
   NflData::API::Statline.get_receiving(1, 2014)
+```
+
+### Teams
+
+Pull teams:
+
+```ruby
+  NflData::API::Team.get_all
 ```
 
 ## Contributing
