@@ -21,3 +21,5 @@ tmp
 *.a
 mkmf.log
 test/fixtures/cassettes
+.ruby-version
+.ruby-gemset
