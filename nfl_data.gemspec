@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['j.m.taylor1@gmail.com']
   spec.homepage      = 'https://github.com/thetizzo/nfl_data'
   spec.license       = 'MIT'
-  spec.summary       = %q{Grabber for NFL data that is useful for fantasy purposes from NFL.com}
-  spec.description   = %q{This gem is a way to get NFL data for fantasy purposes.}
+  spec.summary       = %q{Parse NFL data like a boss}
+  spec.description   = %q{Parse NFL data like a boss}
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
