@@ -4,9 +4,9 @@ require 'nokogiri'
 require 'open-uri'
 require 'json'
 
-require 'nfl_data/player'
-require 'nfl_data/statline'
-require 'nfl_data/team'
+require 'nfl_data/models/player'
+require 'nfl_data/models/statline'
+require 'nfl_data/models/team'
 
 require 'nfl_data/parsers/player_parser'
 require 'nfl_data/parsers/statline_parser'
