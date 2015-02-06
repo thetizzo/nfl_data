@@ -33,7 +33,7 @@ describe Team do
       {
         name: 'Denver Broncos',
         short_name: 'DEN',
-        schedule: []
+        schedule: nil
       }
     end
 

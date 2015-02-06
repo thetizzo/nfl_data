@@ -6,7 +6,7 @@ module NflData
       {
         name: name,
         short_name: short_name,
-        schedule: []
+        schedule: nil
       }
     end
   end
