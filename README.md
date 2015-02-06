@@ -4,6 +4,8 @@ This gem is for parsing data from NFL.com and returning a JSON blob that can be 
 
 This was written by @mikesells and @thetizzo
 
+[![Gem Version](https://badge.fury.io/rb/nfl_data.svg)](http://badge.fury.io/rb/nfl_data)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -56,7 +58,7 @@ Pull teams by year with or without schedules:
 
 ```ruby
   NflData::API::Team.get_all(2014)
-  
+
   NflData::API::Team.get_all_with_schedule(2014)
 ```
 
