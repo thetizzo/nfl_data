@@ -59,7 +59,9 @@ module NflData
             game.week = elements[0].inner_text.strip
             game.date = elements[1].inner_text.strip
             game.time = elements[3].nil? ? nil : elements[3].inner_text.strip
-            game.opponent = get_opponent(team, elements[2].search('a'))
+            participants = elements[2].search('a')
+            game.opponent = get_opponent(team, participants)
+            game.home_game = home_game?(team, participants)
             schedule.games << game
           end
         end
@@ -73,6 +75,12 @@ module NflData
       p1 = participants[0].inner_text.strip
       return participants[1].inner_text.strip if team.short_name == p1
       p1
+    end
+
+    def home_game?(team, participants)
+      return nil if participants[0].nil?
+      home_team = participants[1].inner_text.strip
+      home_team == team.short_name
     end
   end
 end
