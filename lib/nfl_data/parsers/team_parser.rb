@@ -33,10 +33,16 @@ module NflData
         team = Team.new
         team.name = link.inner_text.strip
         team.short_name = link.attribute('href').value.scan(/=(.*)/).flatten.first
+        make_jacksonville_abbreviation_consistent(team)
         team.schedule = get_schedule(team, year) if with_schedule
 
         team.to_hash
       end
+    end
+
+    def make_jacksonville_abbreviation_consistent(team)
+      # Use JAX because schedule pages use JAX and it's easier to fix it here
+      team.short_name = 'JAX' if team.short_name == 'JAC'
     end
 
     def get_schedule(team, year)

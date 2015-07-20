@@ -37,7 +37,7 @@ describe PlayerParser do
         response = @parser.get_by_position(:wide_receivers)
 
         response.keys.must_include :wide_receivers
-        response[:wide_receivers].count.must_equal 373
+        response[:wide_receivers].count.must_equal 372
       end
     end
 
@@ -57,7 +57,7 @@ describe PlayerParser do
         {
           quarterbacks: 121,
           runningbacks: 231,
-          wide_receivers: 373,
+          wide_receivers: 372,
           tight_ends: 190
         }.each do |position, player_count|
           response.keys.must_include position
