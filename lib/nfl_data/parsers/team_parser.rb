@@ -50,9 +50,13 @@ module NflData
       tables = doc.search('table.data-table1')
 
       tables.each do |table|
+        # Skip any empty tables. They put these in between post season and regular seasons game tables
+        next if table.children.count <= 1
         title = table.search('tr.thd1 td')
 
-        if title.inner_text.strip == 'Regular Season'
+        # Need to check for the Regular Season table and a table with no title
+        # because during the season the NFl splits the games between 2 tables
+        if ['Regular Season', ''].include?(title.inner_text.strip)
           weeks = table.search('tr.tbdy1')
 
           weeks.each do |week|
@@ -60,7 +64,6 @@ module NflData
             elements = week.search('td')
             game.week = elements[0].inner_text.strip
             game.date = elements[1].inner_text.strip
-            game.time = elements[3].nil? ? nil : elements[3].inner_text.strip
             participants = elements[2].search('a')
             game.opponent = get_opponent(team, participants)
             game.home_game = home_game?(team, participants)

@@ -22,14 +22,13 @@ module NflData
       end
 
       class Game
-        attr_accessor :week, :opponent, :date, :time, :home_game
+        attr_accessor :week, :opponent, :date, :home_game
 
         def to_hash
           {
             week: week,
             opponent: opponent,
             date: date,
-            time: time,
             home_game: home_game
           }
         end
