@@ -1,5 +1,7 @@
 module NflData
   class PlayerParser
+    include ParserHelper
+
     attr_reader :base_url
 
     def initialize
@@ -65,7 +67,7 @@ module NflData
         player.number = elements[1].inner_text.strip
         name = elements[2].inner_text.strip
         player.status = elements[3].inner_text.strip
-        player.team = elements[12].inner_text.strip
+        player.team = make_jacksonville_abbreviation_consistent(elements[12].inner_text.strip)
 
         #Get NFL.com Unique player id
         player.nfl_player_id = elements[2].to_s.split('/')[3]

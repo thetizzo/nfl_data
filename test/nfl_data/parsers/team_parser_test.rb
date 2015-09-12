@@ -32,7 +32,9 @@ describe TeamParser do
 
     it 'should use JAX as the abbreviation for Jacksonville' do
       VCR.use_cassette('teams_with_schedule') do
-        @parser.get_by_year(2014, true).any? {|team| team[:short_name] == 'JAX'}.must_equal true
+        result = @parser.get_by_year(2014, true)
+        result.any? {|team| team[:short_name] == 'JAX'}.must_equal true
+        result.none? {|team| team[:short_name] == 'JAC'}.must_equal true
       end
     end
   end

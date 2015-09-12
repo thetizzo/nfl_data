@@ -19,7 +19,7 @@ describe PlayerParser do
         response = @parser.get_by_position(:quarterbacks)
 
         response.keys.must_include :quarterbacks
-        response[:quarterbacks].count.must_equal 121
+        response[:quarterbacks].count.must_equal 123
       end
     end
 
@@ -28,7 +28,7 @@ describe PlayerParser do
         response = @parser.get_by_position(:runningbacks)
 
         response.keys.must_include :runningbacks
-        response[:runningbacks].count.must_equal 231
+        response[:runningbacks].count.must_equal 245
       end
     end
 
@@ -37,7 +37,7 @@ describe PlayerParser do
         response = @parser.get_by_position(:wide_receivers)
 
         response.keys.must_include :wide_receivers
-        response[:wide_receivers].count.must_equal 372
+        response[:wide_receivers].count.must_equal 398
       end
     end
 
@@ -46,7 +46,7 @@ describe PlayerParser do
         response = @parser.get_by_position(:tight_ends)
 
         response.keys.must_include :tight_ends
-        response[:tight_ends].count.must_equal 190
+        response[:tight_ends].count.must_equal 206
       end
     end
 
@@ -55,14 +55,25 @@ describe PlayerParser do
         response = @parser.get_by_position(:all)
 
         {
-          quarterbacks: 121,
-          runningbacks: 231,
-          wide_receivers: 372,
-          tight_ends: 190
+          quarterbacks: 123,
+          runningbacks: 245,
+          wide_receivers: 398,
+          tight_ends: 206
         }.each do |position, player_count|
           response.keys.must_include position
           response[position].count.must_equal player_count
         end
+      end
+    end
+
+    it 'should use JAX as Jacksonville abbreviation for all JAX team players' do
+      VCR.use_cassette('all_players') do
+        response = @parser.get_by_position(:all)
+
+        players = [response[:quarterbacks], response[:runningbacks], response[:wide_receivers], response[:tight_ends]].flatten
+
+        players.any? {|player| player[:team] == 'JAX'}.must_equal true
+        players.none? {|player| player[:team] == 'JAC'}.must_equal true
       end
     end
   end

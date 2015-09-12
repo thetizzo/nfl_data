@@ -1,5 +1,7 @@
 module NflData
   class TeamParser
+    include ParserHelper
+
     attr_reader :base_url
 
     def initialize
@@ -32,17 +34,11 @@ module NflData
       team_links.map do |link|
         team = Team.new
         team.name = link.inner_text.strip
-        team.short_name = link.attribute('href').value.scan(/=(.*)/).flatten.first
-        make_jacksonville_abbreviation_consistent(team)
+        team.short_name = make_jacksonville_abbreviation_consistent(link.attribute('href').value.scan(/=(.*)/).flatten.first)
         team.schedule = get_schedule(team, year) if with_schedule
 
         team.to_hash
       end
-    end
-
-    def make_jacksonville_abbreviation_consistent(team)
-      # Use JAX because schedule pages use JAX and it's easier to fix it here
-      team.short_name = 'JAX' if team.short_name == 'JAC'
     end
 
     def get_schedule(team, year)
