@@ -5,6 +5,7 @@ This gem is for parsing data from NFL.com and returning a JSON blob that can be 
 This was written by @mikesells and @thetizzo
 
 [![Gem Version](https://badge.fury.io/rb/nfl_data.svg)](http://badge.fury.io/rb/nfl_data)
+[![Code Climate](https://codeclimate.com/github/thetizzo/nfl_data/badges/gpa.svg)](https://codeclimate.com/github/thetizzo/nfl_data)
 
 ## Installation
 
