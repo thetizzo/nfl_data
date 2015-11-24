@@ -5,7 +5,7 @@ module NflData
     attr_reader :base_url
 
     def initialize
-      @base_url = "http://www.nfl.com/standings?category=league&split=Overall&season="
+      @base_url = 'http://www.nfl.com/standings?category=league&split=Overall&season='
     end
 
     def get_by_year(year, with_schedule)
@@ -27,14 +27,15 @@ module NflData
         if href.nil?
           true
         else
-          !href.value.start_with?("/teams/profile?team=")
+          !href.value.start_with?('/teams/profile?team=')
         end
       end
 
       team_links.map do |link|
         team = Team.new
         team.name = link.inner_text.strip
-        team.short_name = make_jacksonville_abbreviation_consistent(link.attribute('href').value.scan(/=(.*)/).flatten.first)
+        short_name = link.attribute('href').value.scan(/=(.*)/).flatten.first
+        team.short_name = make_jacksonville_abbreviation_consistent(short_name)
         team.schedule = get_schedule(team, year) if with_schedule
 
         team.to_hash
@@ -42,7 +43,9 @@ module NflData
     end
 
     def get_schedule(team, year)
-      url = "http://www.nfl.com/teams/schedule?seasonType=REG&team=#{team.short_name}&season=#{year}"
+      url = 'http://www.nfl.com/teams/schedule?seasonType=REG&' \
+            "team=#{team.short_name}&season=#{year}"
+
       schedule = Team::Schedule.new
 
       doc = open(url) { |f| Nokogiri(f) }
@@ -50,25 +53,25 @@ module NflData
       tables = doc.search('table.data-table1')
 
       tables.each do |table|
-        # Skip any empty tables. They put these in between post season and regular seasons game tables
+        # Skip any empty tables. They put these in between post season
+        # and regular seasons game tables
         next if table.children.count <= 1
         title = table.search('tr.thd1 td')
 
         # Need to check for the Regular Season table and a table with no title
         # because during the season the NFl splits the games between 2 tables
-        if ['Regular Season', ''].include?(title.inner_text.strip)
-          weeks = table.search('tr.tbdy1')
+        next unless ['Regular Season', ''].include?(title.inner_text.strip)
+        weeks = table.search('tr.tbdy1')
 
-          weeks.each do |week|
-            game = Team::Schedule::Game.new
-            elements = week.search('td')
-            game.week = elements[0].inner_text.strip
-            game.date = elements[1].inner_text.strip
-            participants = elements[2].search('a')
-            game.opponent = get_opponent(team, participants)
-            game.home_game = home_game?(team, participants)
-            schedule.games << game
-          end
+        weeks.each do |week|
+          game = Team::Schedule::Game.new
+          elements = week.search('td')
+          game.week = elements[0].inner_text.strip
+          game.date = elements[1].inner_text.strip
+          participants = elements[2].search('a')
+          game.opponent = get_opponent(team, participants)
+          game.home_game = home_game?(team, participants)
+          schedule.games << game
         end
       end
 

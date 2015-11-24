@@ -79,22 +79,22 @@ describe Statline do
 
   describe 'to_hash' do
     before do
-        @statline.nfl_player_id = '123'
-        @statline.week = 1
-        @statline.year = 2014
-        @statline.rush_atts = 1
-        @statline.rush_yards = 25
-        @statline.rush_tds = 1
-        @statline.fumbles = 0
-        @statline.pass_comp = 1
-        @statline.pass_att = 2
-        @statline.pass_yards = 100
-        @statline.pass_tds = 1
-        @statline.ints = 1
-        @statline.qb_rating = "46.8"
-        @statline.receptions = 2
-        @statline.rec_yards = 25
-        @statline.rec_tds = 1
+      @statline.nfl_player_id = '123'
+      @statline.week = 1
+      @statline.year = 2014
+      @statline.rush_atts = 1
+      @statline.rush_yards = 25
+      @statline.rush_tds = 1
+      @statline.fumbles = 0
+      @statline.pass_comp = 1
+      @statline.pass_att = 2
+      @statline.pass_yards = 100
+      @statline.pass_tds = 1
+      @statline.ints = 1
+      @statline.qb_rating = '46.8'
+      @statline.receptions = 2
+      @statline.rec_yards = 25
+      @statline.rec_tds = 1
     end
 
     def valid_statline_hash
@@ -111,7 +111,7 @@ describe Statline do
         pass_yards: 100,
         pass_tds: 1,
         ints: 1,
-        qb_rating: "46.8",
+        qb_rating: '46.8',
         receptions: 2,
         rec_yards: 25,
         rec_tds: 1
@@ -121,6 +121,5 @@ describe Statline do
     it 'can return itself as hash' do
       @statline.to_hash.must_equal valid_statline_hash
     end
-
   end
 end

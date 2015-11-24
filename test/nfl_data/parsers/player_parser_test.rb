@@ -10,7 +10,11 @@ describe PlayerParser do
   end
 
   it 'should know the correct base url' do
-    @parser.base_url.must_equal "http://www.nfl.com/players/search?category=position&conferenceAbbr=null&playerType=current&conference=ALL&filter="
+    expected_base_url = 'http://www.nfl.com/players/search?category=' \
+                        'position&conferenceAbbr=null&playerType=current' \
+                        '&conference=ALL&filter='
+
+    @parser.base_url.must_equal expected_base_url
   end
 
   describe 'get_by_position' do
@@ -70,10 +74,12 @@ describe PlayerParser do
       VCR.use_cassette('all_players') do
         response = @parser.get_by_position(:all)
 
-        players = [response[:quarterbacks], response[:runningbacks], response[:wide_receivers], response[:tight_ends]].flatten
+        players =
+          [response[:quarterbacks], response[:runningbacks],
+           response[:wide_receivers], response[:tight_ends]].flatten
 
-        players.any? {|player| player[:team] == 'JAX'}.must_equal true
-        players.none? {|player| player[:team] == 'JAC'}.must_equal true
+        players.any? { |player| player[:team] == 'JAX' }.must_equal true
+        players.none? { |player| player[:team] == 'JAC' }.must_equal true
       end
     end
   end

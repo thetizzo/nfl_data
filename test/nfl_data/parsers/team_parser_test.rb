@@ -10,7 +10,7 @@ describe TeamParser do
   end
 
   it 'should know the correct base url' do
-    @parser.base_url.must_equal "http://www.nfl.com/standings?category=league&split=Overall&season="
+    @parser.base_url.must_equal 'http://www.nfl.com/standings?category=league&split=Overall&season='
   end
 
   describe 'get_by_year' do
@@ -33,8 +33,8 @@ describe TeamParser do
     it 'should use JAX as the abbreviation for Jacksonville' do
       VCR.use_cassette('teams_with_schedule') do
         result = @parser.get_by_year(2014, true)
-        result.any? {|team| team[:short_name] == 'JAX'}.must_equal true
-        result.none? {|team| team[:short_name] == 'JAC'}.must_equal true
+        result.any? { |team| team[:short_name] == 'JAX' }.must_equal true
+        result.none? { |team| team[:short_name] == 'JAC' }.must_equal true
       end
     end
   end

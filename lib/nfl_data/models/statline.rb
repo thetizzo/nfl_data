@@ -1,5 +1,4 @@
 module NflData
-
   class Statline
     attr_accessor :week, :year, :rush_atts, :rush_yards, :rush_tds, :fumbles,
       :pass_comp, :pass_att, :pass_yards, :pass_tds, :ints, :qb_rating, :receptions,
@@ -26,5 +25,4 @@ module NflData
       }
     end
   end
-
 end

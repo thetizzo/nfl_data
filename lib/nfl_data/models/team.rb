@@ -18,7 +18,7 @@ module NflData
       end
 
       def to_hash
-        @games.map { |game| game.to_hash }
+        @games.map(&:to_hash)
       end
 
       class Game
@@ -33,7 +33,6 @@ module NflData
           }
         end
       end
-
     end
   end
 end

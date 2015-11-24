@@ -1,7 +1,6 @@
 require 'test_helper'
 
 describe Player do
-
   before do
     @player = Player.new
   end
@@ -70,6 +69,5 @@ describe Player do
     it 'can return itself as hash' do
       @player.to_hash.must_equal valid_player_hash
     end
-
   end
 end

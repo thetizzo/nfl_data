@@ -1,7 +1,6 @@
 module NflData
   module API
     class Team
-
       def initialize
         @parser = TeamParser.new
       end
@@ -11,15 +10,13 @@ module NflData
       end
 
       class << self
-
         def get_all(year)
-          self.new.get(year)
+          new.get(year)
         end
 
         def get_all_with_schedule(year)
-          self.new.get(year, true)
+          new.get(year, true)
         end
-
       end
     end
   end

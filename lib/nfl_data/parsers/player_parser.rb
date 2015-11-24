@@ -5,7 +5,7 @@ module NflData
     attr_reader :base_url
 
     def initialize
-      @base_url = "http://www.nfl.com/players/search?category=position&conferenceAbbr=null&playerType=current&conference=ALL&filter="
+      @base_url = 'http://www.nfl.com/players/search?category=position&conferenceAbbr=null&playerType=current&conference=ALL&filter='
     end
 
     def get_by_position(position)

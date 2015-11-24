@@ -1,5 +1,4 @@
 module NflData
-
   class Player
     attr_accessor :first_name, :last_name, :full_name, :position, :number, :status, :team, :nfl_player_id
 
@@ -17,5 +16,4 @@ module NflData
     end
 
   end
-
 end

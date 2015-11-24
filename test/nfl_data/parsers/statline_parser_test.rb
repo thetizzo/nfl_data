@@ -30,6 +30,5 @@ describe StatlineParser do
         response.count.must_equal 210
       end
     end
-
   end
 end

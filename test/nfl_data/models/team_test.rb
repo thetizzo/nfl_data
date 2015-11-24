@@ -1,7 +1,6 @@
 require 'test_helper'
 
 describe Team do
-
   before do
     @team = Team.new
   end
@@ -40,6 +39,5 @@ describe Team do
     it 'can return itself as hash' do
       @team.to_hash.must_equal valid_player_hash
     end
-
   end
 end
