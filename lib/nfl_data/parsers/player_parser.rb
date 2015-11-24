@@ -36,8 +36,6 @@ module NflData
       returnVal = []
       page_num = 1
 
-      count = 100
-
       loop do
         page_num += 1
         players_found = update_or_create_players(url)
