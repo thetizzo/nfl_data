@@ -9,78 +9,68 @@ module NflData
     end
 
     def get_by_position(position)
-      case position
-      when :quarterbacks
-        { position => get('quarterback') }
-      when :runningbacks
-        { position => get('runningback') }
-      when :wide_receivers
-        { position => get('widereceiver') }
-      when :tight_ends
-        { position => get('tightend') }
-      when :all
+      if position == :all
         {
           quarterbacks: get('quarterback'),
           runningbacks: get('runningback'),
           wide_receivers: get('widereceiver'),
           tight_ends: get('tightend')
         }
+      else
+        # We have to remove the '_' and 's' because the NFL url has
+        # singular position names and all are one word.
+        { position => get(position.to_s.gsub(/s|_/, '')) }
       end
     end
 
     private
 
     def get(position)
-      baseurl = @base_url + position
-      url = baseurl
-      returnVal = []
-      page_num = 1
+      page_number = 1
+      url = "#{@base_url}#{position}&d-447263-p=#{page_number}"
+      return_val = []
 
       loop do
-        page_num += 1
         players_found = update_or_create_players(url)
-        returnVal.push(players_found[1])
+        return_val.push(players_found[1])
         break if players_found[0] == 0
-        url = baseurl + '&d-447263-p='
-        url += page_num.to_s
+        url = url.chomp(page_number.to_s)
+        page_number += 1
+        url += page_number.to_s
       end
 
-      returnVal.flatten.map{ |player| player.to_hash }
+      return_val.flatten.map(&:to_hash)
     end
 
     def update_or_create_players(url)
-      # puts "Pulling from url = #{url}"
       doc = open(url) { |f| Nokogiri(f) }
 
-      #NFL.com stores players in 2 types of rows. Class = Odd or Even. This pulls them all.
-      odds = doc.search("tr.odd")
-      evens = doc.search("tr.even")
-
-      all = odds + evens
-
-      players = all.map do |p|
-        player = Player.new
-        elements = p.search("td")
-        player.position = elements[0].inner_text.strip
-        player.number = elements[1].inner_text.strip
-        name = elements[2].inner_text.strip
-        player.status = elements[3].inner_text.strip
-        player.team = make_jacksonville_abbreviation_consistent(elements[12].inner_text.strip)
-
-        #Get NFL.com Unique player id
-        player.nfl_player_id = elements[2].to_s.split('/')[3]
-
-        names = name.split(',')
-
-        player.first_name = names[1].strip
-        player.last_name = names[0].strip
-
-        player.full_name = [player.first_name, player.last_name].join(' ')
-        player
-      end
-
+      # NFL.com stores players in 2 types of rows.
+      # css class = odd or even.
+      all_rows = doc.search('tr.odd') + doc.search('tr.even')
+      players = all_rows.map { |row| parse_player_from_row(row.search('td')) }
       [players.count, players]
     end
 
+    def parse_player_from_row(elements)
+      # Get NFL.com Unique player id
+      nfl_player_id = elements[2].to_s.split('/')[3]
+
+      # player id is the only one with complicated parsing so we
+      # can just extract the inner text out of the rest of the elements
+      elements = elements.map(&:inner_text).map(&:strip)
+      names = elements[2].split(',').map(&:strip).reverse
+
+      Player.new(
+        nfl_player_id: nfl_player_id,
+        position: elements[0],
+        number: elements[1],
+        status: elements[3],
+        team: make_jacksonville_abbreviation_consistent(elements[12]),
+        first_name: names[0],
+        last_name: names[1],
+        full_name: names.join(' ')
+      )
+    end
   end
 end

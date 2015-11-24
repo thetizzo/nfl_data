@@ -73,10 +73,6 @@ describe Statline do
     @statline.must_respond_to :nfl_player_id
   end
 
-  it 'has sacks' do
-    @statline.must_respond_to :sacks
-  end
-
   describe 'to_hash' do
     before do
       @statline.nfl_player_id = '123'

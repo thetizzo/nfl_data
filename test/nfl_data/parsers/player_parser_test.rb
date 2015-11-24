@@ -32,7 +32,7 @@ describe PlayerParser do
         response = @parser.get_by_position(:runningbacks)
 
         response.keys.must_include :runningbacks
-        response[:runningbacks].count.must_equal 245
+        response[:runningbacks].count.must_equal 248
       end
     end
 
@@ -41,7 +41,7 @@ describe PlayerParser do
         response = @parser.get_by_position(:wide_receivers)
 
         response.keys.must_include :wide_receivers
-        response[:wide_receivers].count.must_equal 398
+        response[:wide_receivers].count.must_equal 399
       end
     end
 
@@ -50,7 +50,7 @@ describe PlayerParser do
         response = @parser.get_by_position(:tight_ends)
 
         response.keys.must_include :tight_ends
-        response[:tight_ends].count.must_equal 206
+        response[:tight_ends].count.must_equal 205
       end
     end
 
@@ -60,9 +60,9 @@ describe PlayerParser do
 
         {
           quarterbacks: 123,
-          runningbacks: 245,
-          wide_receivers: 398,
-          tight_ends: 206
+          runningbacks: 248,
+          wide_receivers: 399,
+          tight_ends: 205
         }.each do |position, player_count|
           response.keys.must_include position
           response[position].count.must_equal player_count
