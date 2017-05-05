@@ -41,6 +41,10 @@ describe Player do
     @player.must_respond_to :nfl_player_id
   end
 
+  it 'has a picture_link' do
+    @player.must_respond_to :picture_link
+  end
+
   describe 'to_hash' do
     before do
       @player.first_name = 'John'
@@ -51,6 +55,7 @@ describe Player do
       @player.status = 'Retired'
       @player.team = 'Broncos'
       @player.nfl_player_id = '123'
+      @player.picture_link = 'google.com'
     end
 
     def valid_player_hash
@@ -62,7 +67,8 @@ describe Player do
         number: 7,
         status: 'Retired',
         team: 'Broncos',
-        nfl_player_id: '123'
+        nfl_player_id: '123',
+        picture_link: 'google.com'
       }
     end
 

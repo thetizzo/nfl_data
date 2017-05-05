@@ -69,8 +69,16 @@ module NflData
         team: make_jacksonville_abbreviation_consistent(elements[12]),
         first_name: names[0],
         last_name: names[1],
-        full_name: names.join(' ')
+        full_name: names.join(' '),
+        picture_link: get_picture_link(nfl_player_id, names[0], names[1])
       )
+    end
+
+    def get_picture_link(nfl_player_id, first_name, last_name)
+      return nil if ENV['NFL_DATA_ENV'] == 'test'
+      url = "http://www.nfl.com/player/#{first_name.gsub(/\s/, '')}#{last_name.gsub(/\s/, '')}/#{nfl_player_id}/profile"
+      doc = open(url) { |f| Nokogiri(f) }
+      doc.search('div.player-photo img').first.attributes['src'].value
     end
   end
 end
