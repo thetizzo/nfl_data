@@ -70,7 +70,7 @@ module NflData
         first_name: names[0],
         last_name: names[1],
         full_name: names.join(' '),
-        picture_link: get_picture_link(nfl_player_id, names[0], names[1])
+        # picture_link: get_picture_link(nfl_player_id, names[0], names[1])
       )
     end
 
