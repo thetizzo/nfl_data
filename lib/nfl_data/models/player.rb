@@ -2,7 +2,7 @@ module NflData
   class Player
     ATTRIBUTES = [
       :first_name, :last_name, :full_name, :position, :number,
-      :status, :team, :nfl_player_id, :picture_link
+      :status, :team, :nfl_player_id, :picture_link, :profile_link
     ]
 
     attr_accessor(*ATTRIBUTES)

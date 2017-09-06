@@ -56,6 +56,7 @@ describe Player do
       @player.team = 'Broncos'
       @player.nfl_player_id = '123'
       @player.picture_link = 'google.com'
+      @player.profile_link = 'espn.com'
     end
 
     def valid_player_hash
@@ -68,7 +69,8 @@ describe Player do
         status: 'Retired',
         team: 'Broncos',
         nfl_player_id: '123',
-        picture_link: 'google.com'
+        picture_link: 'google.com',
+        profile_link: 'espn.com'
       }
     end
 

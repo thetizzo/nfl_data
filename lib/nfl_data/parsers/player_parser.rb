@@ -1,3 +1,5 @@
+require 'typhoeus'
+
 module NflData
   class PlayerParser
     include ParserHelper
@@ -40,6 +42,10 @@ module NflData
       end
 
       return_val.flatten.map(&:to_hash)
+
+      return_val = return_val.flatten
+      populate_picture_links(return_val)
+      return_val.map(&:to_hash)
     end
 
     def update_or_create_players(url)
@@ -70,15 +76,27 @@ module NflData
         first_name: names[0],
         last_name: names[1],
         full_name: names.join(' '),
-        # picture_link: get_picture_link(nfl_player_id, names[0], names[1])
+        profile_link: get_profile_link(nfl_player_id, names[0], names[1])
       )
     end
 
-    def get_picture_link(nfl_player_id, first_name, last_name)
+    def get_profile_link(nfl_player_id, first_name, last_name)
       return nil if ENV['NFL_DATA_ENV'] == 'test'
-      url = "http://www.nfl.com/player/#{first_name.gsub(/\s/, '')}#{last_name.gsub(/\s/, '')}/#{nfl_player_id}/profile"
-      doc = open(url) { |f| Nokogiri(f) }
-      doc.search('div.player-photo img').first.attributes['src'].value
+      "http://www.nfl.com/player/#{first_name.gsub(/\s/, '')}#{last_name.gsub(/\s/, '')}/#{nfl_player_id}/profile"
+    end
+
+    def populate_picture_links(players)
+      hydra = Typhoeus::Hydra.hydra
+      players.each do |player|
+        request = Typhoeus::Request.new(player.profile_link, followlocation: true, accept_encoding: 'gzip')
+        request.on_complete do |response|
+          doc = Nokogiri::HTML(response.body)
+          img_element = doc.search('div.player-photo img').first
+          player.picture_link = img_element.attributes['src'].value unless img_element.nil?
+        end
+        hydra.queue(request)
+      end
+      hydra.run
     end
   end
 end
