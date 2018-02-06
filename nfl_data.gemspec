@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'minitest', '~> 5.4.1'
   spec.add_development_dependency 'vcr', '~> 2.9.3'
   spec.add_development_dependency 'webmock', '~> 1.19.0'
-  spec.add_development_dependency 'rubocop', '~> 0.35.1'
+  spec.add_development_dependency 'rubocop', '~> 0.52.1'
 
   spec.add_dependency 'typhoeus', '~> 1.3'
   spec.add_dependency 'nokogiri', '~> 1.6'
