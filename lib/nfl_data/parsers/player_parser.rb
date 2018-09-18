@@ -81,7 +81,6 @@ module NflData
     end
 
     def get_profile_link(nfl_player_id, first_name, last_name)
-      return nil if ENV['NFL_DATA_ENV'] == 'test'
       "http://www.nfl.com/player/#{first_name.gsub(/\s/, '')}#{last_name.gsub(/\s/, '')}/#{nfl_player_id}/profile"
     end
 
