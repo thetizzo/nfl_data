@@ -20,6 +20,6 @@ tmp
 *.o
 *.a
 mkmf.log
-test/fixtures/cassettes
+test/cassettes
 .ruby-version
 .ruby-gemset
