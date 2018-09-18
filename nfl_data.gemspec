@@ -19,12 +19,12 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.6'
+  spec.add_development_dependency 'bundler', '~> 1.16.5'
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'minitest', '~> 5.4.1'
-  spec.add_development_dependency 'vcr', '~> 2.9.3'
-  spec.add_development_dependency 'webmock', '~> 1.19.0'
-  spec.add_development_dependency 'rubocop', '~> 0.52.1'
+  spec.add_development_dependency 'minitest', '~> 5.11.3'
+  spec.add_development_dependency 'vcr', '~> 4.0.0'
+  spec.add_development_dependency 'webmock', '~> 3.4.2'
+  spec.add_development_dependency 'rubocop', '~> 0.59.1'
 
   spec.add_dependency 'typhoeus', '~> 1.3'
   spec.add_dependency 'nokogiri', '~> 1.6'
