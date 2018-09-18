@@ -1,11 +1,10 @@
 module NflData
   class TeamParser
-    include ParserHelper
+    include Teams
 
     attr_reader :base_url
 
     def initialize
-      @base_url = 'http://www.nfl.com/standings?category=league&split=Overall&season='
     end
 
     def get_by_year(year, with_schedule)
@@ -15,27 +14,10 @@ module NflData
     private
 
     def get(year, with_schedule)
-      url = @base_url + "#{year}-REG"
-
-      doc = open(url) { |f| Nokogiri(f) }
-
-      all_links = doc.search('a').to_a
-
-      team_links = all_links.reject do |link|
-        href = link.attribute('href')
-
-        if href.nil?
-          true
-        else
-          !href.value.start_with?('/teams/profile?team=')
-        end
-      end
-
-      team_links.map do |link|
+      TEAMS.map do |short_name, team_name|
         team = Team.new
-        team.name = link.inner_text.strip
-        short_name = link.attribute('href').value.scan(/=(.*)/).flatten.first
-        team.short_name = make_jacksonville_abbreviation_consistent(short_name)
+        team.name = team_name
+        team.short_name = short_name
         team.schedule = get_schedule(team, year) if with_schedule
 
         team.to_hash
