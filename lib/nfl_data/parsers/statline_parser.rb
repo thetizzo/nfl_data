@@ -72,7 +72,7 @@ module NflData
           statline.fumbles = elements[8].inner_text.strip
         end
 
-        statline.to_hash
+        statline.to_h
       end
     end
   end
