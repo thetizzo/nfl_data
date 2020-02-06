@@ -49,7 +49,7 @@ module NflData
     end
 
     def update_or_create_players(url)
-      doc = open(url) { |f| Nokogiri(f) }
+      doc = URI.open(url) { |f| Nokogiri(f) }
 
       # NFL.com stores players in 2 types of rows.
       # css class = odd or even.

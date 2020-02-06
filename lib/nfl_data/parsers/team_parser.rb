@@ -30,7 +30,7 @@ module NflData
 
       schedule = Team::Schedule.new
 
-      doc = open(url) { |f| Nokogiri(f) }
+      doc = URI.open(url) { |f| Nokogiri(f) }
 
       tables = doc.search('table.data-table1')
 

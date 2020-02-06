@@ -22,7 +22,7 @@ module NflData
       new_url = ''
 
       begin
-        open(old_url) do |resp|
+        URI.open(old_url) do |resp|
           new_url = resp.base_uri.to_s
         end
       rescue
@@ -36,7 +36,7 @@ module NflData
       url = 'http://www.nfl.com/stats/weeklyleaders?type=REG' \
                  "&week=#{weeknum}&season=#{year}&showCategory=#{stat_type}"
 
-      doc = open(url) { |f| Nokogiri(f) }
+      doc = URI.open(url) { |f| Nokogiri(f) }
 
       odds = doc.search('tr.odd')
       evens = doc.search('tr.even')
