@@ -1,4 +1,4 @@
-require 'typhoeus'
+require "typhoeus"
 
 module NflData
   class PlayerParser
@@ -7,21 +7,21 @@ module NflData
     attr_reader :base_url
 
     def initialize
-      @base_url = 'http://www.nfl.com/players/search?category=position&conferenceAbbr=null&playerType=current&conference=ALL&filter='
+      @base_url = "http://www.nfl.com/players/search?category=position&conferenceAbbr=null&playerType=current&conference=ALL&filter="
     end
 
     def get_by_position(position)
       if position == :all
         {
-          quarterbacks: get('quarterback'),
-          runningbacks: get('runningback'),
-          wide_receivers: get('widereceiver'),
-          tight_ends: get('tightend')
+          quarterbacks: get("quarterback"),
+          runningbacks: get("runningback"),
+          wide_receivers: get("widereceiver"),
+          tight_ends: get("tightend"),
         }
       else
         # We have to remove the '_' and 's' because the NFL url has
         # singular position names and all are one word.
-        { position => get(position.to_s.gsub(/s|_/, '')) }
+        {position => get(position.to_s.gsub(/s|_/, ""))}
       end
     end
 
@@ -51,24 +51,24 @@ module NflData
 
       # NFL.com stores players in 2 types of rows.
       # css class = odd or even.
-      all_rows = doc.search('tr.odd') + doc.search('tr.even')
-      players = all_rows.map { |row| parse_player_from_row(row.search('td')) }
+      all_rows = doc.search("tr.odd") + doc.search("tr.even")
+      players = all_rows.map { |row| parse_player_from_row(row.search("td")) }
       [players.count, players]
     end
 
     def parse_player_from_row(elements)
       # Get NFL.com Unique player id
-      nfl_player_id = elements[2].to_s.split('/')[3]
+      nfl_player_id = elements[2].to_s.split("/")[3]
 
       # player id is the only one with complicated parsing so we
       # can just extract the inner text out of the rest of the elements
       elements = elements.map(&:inner_text).map(&:strip)
-      names = elements[2].split(',').map(&:strip).reverse
+      names = elements[2].split(",").map(&:strip).reverse
 
       Player.new(
         names[0], # first name
         names[1], # last name
-        names.join(' '), # full name
+        names.join(" "), # full name
         elements[0], # position
         elements[1], # number
         elements[3], # status
@@ -79,17 +79,17 @@ module NflData
     end
 
     def get_profile_link(nfl_player_id, first_name, last_name)
-      "http://www.nfl.com/player/#{first_name.gsub(/\s/, '')}#{last_name.gsub(/\s/, '')}/#{nfl_player_id}/profile"
+      "http://www.nfl.com/player/#{first_name.gsub(/\s/, "")}#{last_name.gsub(/\s/, "")}/#{nfl_player_id}/profile"
     end
 
     def populate_picture_links(players)
       hydra = Typhoeus::Hydra.hydra
       players.each do |player|
-        request = Typhoeus::Request.new(player.profile_link, followlocation: true, accept_encoding: 'gzip')
+        request = Typhoeus::Request.new(player.profile_link, followlocation: true, accept_encoding: "gzip")
         request.on_complete do |response|
           doc = Nokogiri::HTML(response.body)
-          img_element = doc.search('div.player-photo img').first
-          player.picture_link = img_element.attributes['src'].value unless img_element.nil?
+          img_element = doc.search("div.player-photo img").first
+          player.picture_link = img_element.attributes["src"].value unless img_element.nil?
         end
         hydra.queue(request)
       end

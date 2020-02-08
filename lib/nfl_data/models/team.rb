@@ -6,7 +6,7 @@ module NflData
       {
         name: name,
         short_name: short_name,
-        schedule: schedule.nil? ? [] : schedule.to_hash
+        schedule: schedule.nil? ? [] : schedule.to_hash,
       }
     end
 
@@ -29,7 +29,7 @@ module NflData
             week: week,
             opponent: opponent,
             date: date,
-            home_game: home_game
+            home_game: home_game,
           }
         end
       end

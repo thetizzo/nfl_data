@@ -6,20 +6,20 @@ module NflData
     def get(week, year, stat_type)
       case stat_type
       when :passing
-        grab_week(week, year, 'Passing')
+        grab_week(week, year, "Passing")
       when :rushing
-        grab_week(week, year, 'Rushing')
+        grab_week(week, year, "Rushing")
       when :receiving
-        grab_week(week, year, 'Receiving')
+        grab_week(week, year, "Receiving")
       end
     end
 
     private
 
     def get_player_id_from_profile_url(element)
-      old_url = 'http://nfl.com' +
-                element.search('a').first.attributes['href'].value
-      new_url = ''
+      old_url = "http://nfl.com" +
+        element.search("a").first.attributes["href"].value
+      new_url = ""
 
       begin
         URI.open(old_url) do |resp|
@@ -29,22 +29,22 @@ module NflData
         return nil
       end
 
-      new_url.gsub('http://www.nfl.com', '').to_s.split('/')[3]
+      new_url.gsub("http://www.nfl.com", "").to_s.split("/")[3]
     end
 
     def grab_week(weeknum, year, stat_type)
-      url = 'http://www.nfl.com/stats/weeklyleaders?type=REG' \
+      url = "http://www.nfl.com/stats/weeklyleaders?type=REG" \
                  "&week=#{weeknum}&season=#{year}&showCategory=#{stat_type}"
 
       doc = URI.open(url) { |f| Nokogiri(f) }
 
-      odds = doc.search('tr.odd')
-      evens = doc.search('tr.even')
+      odds = doc.search("tr.odd")
+      evens = doc.search("tr.even")
 
       all = odds + evens
 
       all.map do |player_row|
-        elements = player_row.search('td')
+        elements = player_row.search("td")
 
         statline = Statline.new
 
@@ -52,12 +52,12 @@ module NflData
         statline.week = weeknum
         statline.year = year
 
-        if stat_type == 'Rushing'
+        if stat_type == "Rushing"
           statline.rush_atts = elements[4].inner_text.strip
           statline.rush_yards = elements[5].inner_text.strip
           statline.rush_tds = elements[7].inner_text.strip
           statline.fumbles = elements[8].inner_text.strip
-        elsif stat_type == 'Passing'
+        elsif stat_type == "Passing"
           statline.pass_comp = elements[4].inner_text.strip
           statline.pass_att = elements[5].inner_text.strip
           statline.pass_yards = elements[6].inner_text.strip
@@ -65,7 +65,7 @@ module NflData
           statline.ints = elements[8].inner_text.strip
           statline.qb_rating = elements[11].inner_text.strip
           statline.fumbles = elements [10].inner_text.strip
-        elsif stat_type == 'Receiving'
+        elsif stat_type == "Receiving"
           statline.receptions = elements[4].inner_text.strip
           statline.rec_yards = elements[5].inner_text.strip
           statline.rec_tds = elements[7].inner_text.strip

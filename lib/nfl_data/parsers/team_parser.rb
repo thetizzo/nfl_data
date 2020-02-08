@@ -25,32 +25,32 @@ module NflData
     end
 
     def get_schedule(team, year)
-      url = 'http://www.nfl.com/teams/schedule?seasonType=REG&' \
+      url = "http://www.nfl.com/teams/schedule?seasonType=REG&" \
             "team=#{team.short_name}&season=#{year}"
 
       schedule = Team::Schedule.new
 
       doc = URI.open(url) { |f| Nokogiri(f) }
 
-      tables = doc.search('table.data-table1')
+      tables = doc.search("table.data-table1")
 
       tables.each do |table|
         # Skip any empty tables. They put these in between post season
         # and regular seasons game tables
         next if table.children.count <= 1
-        title = table.search('tr.thd1 td')
+        title = table.search("tr.thd1 td")
 
         # Need to check for the Regular Season table and a table with no title
         # because during the season the NFl splits the games between 2 tables
-        next unless ['Regular Season', ''].include?(title.inner_text.strip)
-        weeks = table.search('tr.tbdy1')
+        next unless ["Regular Season", ""].include?(title.inner_text.strip)
+        weeks = table.search("tr.tbdy1")
 
         weeks.each do |week|
           game = Team::Schedule::Game.new
-          elements = week.search('td')
+          elements = week.search("td")
           game.week = elements[0].inner_text.strip
           game.date = elements[1].inner_text.strip
-          participants = elements[2].search('a')
+          participants = elements[2].search("a")
           game.opponent = get_opponent(team, participants)
           game.home_game = home_game?(team, participants)
           schedule.games << game

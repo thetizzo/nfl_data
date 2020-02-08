@@ -1,8 +1,8 @@
-require 'nfl_data'
-require 'vcr'
+require "nfl_data"
+require "vcr"
 
 VCR.configure do |c|
-  c.cassette_library_dir = 'spec/cassettes'
+  c.cassette_library_dir = "spec/cassettes"
   c.hook_into :webmock
 end
 
@@ -36,7 +36,7 @@ RSpec.configure do |config|
     config.default_formatter = "doc"
   end
 
-  config.profile_examples = 10
+  config.profile_examples = 5
 
   # Run specs in random order to surface order dependencies. If you find an
   # order dependency and want to debug it, you can fix the order by providing
