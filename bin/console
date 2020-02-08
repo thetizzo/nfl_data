@@ -5,4 +5,4 @@ require 'irb'
 require 'irb/completion'
 require 'nfl_data'
 
-IRB.start
+IRB.start(__FILE__)
