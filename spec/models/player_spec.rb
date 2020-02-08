@@ -36,4 +36,38 @@ RSpec.describe NflData::Player do
   it "has a picture_link" do
     expect(player).to respond_to(:picture_link)
   end
+
+  describe "convert to hash" do
+    before do
+      player.first_name = "John"
+      player.last_name = "Elway"
+      player.position = "QB"
+      player.full_name = "John Elway"
+      player.number = 7
+      player.status = "Retired"
+      player.team = "Broncos"
+      player.nfl_player_id = "123"
+      player.picture_link = "google.com"
+      player.profile_link = "espn.com"
+    end
+
+    def valid_player_hash
+      {
+        first_name: "John",
+        last_name: "Elway",
+        full_name: "John Elway",
+        position: "QB",
+        number: 7,
+        status: "Retired",
+        team: "Broncos",
+        nfl_player_id: "123",
+        picture_link: "google.com",
+        profile_link: "espn.com",
+      }
+    end
+
+    it "can return itself as hash" do
+      expect(player.to_h).to eq(valid_player_hash)
+    end
+  end
 end

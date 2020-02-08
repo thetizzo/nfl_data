@@ -66,15 +66,15 @@ module NflData
       names = elements[2].split(",").map(&:strip).reverse
 
       Player.new(
-        names[0], # first name
-        names[1], # last name
-        names.join(" "), # full name
-        elements[0], # position
-        elements[1], # number
-        elements[3], # status
-        make_jacksonville_abbreviation_consistent(elements[12]), # team
-        nfl_player_id, # nfl_player_id
-        get_profile_link(nfl_player_id, names[0], names[1]) # profile link
+        nfl_player_id: nfl_player_id,
+        position: elements[0],
+        number: elements[1],
+        status: elements[3],
+        team: make_jacksonville_abbreviation_consistent(elements[12]),
+        first_name: names[0],
+        last_name: names[1],
+        full_name: names.join(' '),
+        profile_link: get_profile_link(nfl_player_id, names[0], names[1])
       )
     end
 
