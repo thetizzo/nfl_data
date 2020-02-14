@@ -17,7 +17,7 @@ RSpec.describe NflData::Team do
     before do
       team.name = "Denver Broncos"
       team.short_name = "DEN"
-      team.schedule = NflData::Team::Schedule.new
+      team.schedule = []
     end
 
     def valid_player_hash

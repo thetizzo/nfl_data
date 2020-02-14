@@ -28,7 +28,7 @@ module NflData
       url = "http://www.nfl.com/teams/schedule?seasonType=REG&" \
             "team=#{team.short_name}&season=#{year}"
 
-      schedule = Team::Schedule.new
+      schedule = Schedule.new
 
       doc = URI.open(url) { |f| Nokogiri(f) }
 
@@ -46,7 +46,7 @@ module NflData
         weeks = table.search("tr.tbdy1")
 
         weeks.each do |week|
-          game = Team::Schedule::Game.new
+          game = Schedule::Game.new
           elements = week.search("td")
           game.week = elements[0].inner_text.strip
           game.date = elements[1].inner_text.strip

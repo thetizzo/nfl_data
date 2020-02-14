@@ -7,6 +7,7 @@ require "json"
 require "nfl_data/models/player"
 require "nfl_data/models/statline"
 require "nfl_data/models/team"
+require "nfl_data/models/schedule"
 
 require "nfl_data/parsers/data/teams"
 require "nfl_data/parsers/parser_helper"
