@@ -20,7 +20,7 @@ module NflData
         team.short_name = short_name
         team.schedule = get_schedule(team, year) if with_schedule
 
-        team.to_hash
+        team.to_h
       end
     end
 

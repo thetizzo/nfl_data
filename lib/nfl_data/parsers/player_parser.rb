@@ -73,7 +73,7 @@ module NflData
         team: make_jacksonville_abbreviation_consistent(elements[12]),
         first_name: names[0],
         last_name: names[1],
-        full_name: names.join(' '),
+        full_name: names.join(" "),
         profile_link: get_profile_link(nfl_player_id, names[0], names[1])
       )
     end

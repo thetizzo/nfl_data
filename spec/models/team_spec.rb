@@ -13,11 +13,11 @@ RSpec.describe NflData::Team do
     expect(team).to respond_to(:schedule)
   end
 
-  describe "to_hash" do
+  describe "convert to hash" do
     before do
       team.name = "Denver Broncos"
       team.short_name = "DEN"
-      team.schedule = []
+      team.schedule = NflData::Schedule.new
     end
 
     def valid_player_hash
@@ -29,7 +29,7 @@ RSpec.describe NflData::Team do
     end
 
     it "can return itself as hash" do
-      expect(team.to_hash).to eq(valid_player_hash)
+      expect(team.to_h).to eq(valid_player_hash)
     end
   end
 end

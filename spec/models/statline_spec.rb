@@ -65,9 +65,9 @@ RSpec.describe NflData::Statline do
     expect(statline).to respond_to(:nfl_player_id)
   end
 
-  describe 'convert to hash' do
+  describe "convert to hash" do
     before do
-      statline.nfl_player_id = '123'
+      statline.nfl_player_id = "123"
       statline.week = 1
       statline.year = 2014
       statline.rush_atts = 1
@@ -79,7 +79,7 @@ RSpec.describe NflData::Statline do
       statline.pass_yards = 100
       statline.pass_tds = 1
       statline.ints = 1
-      statline.qb_rating = '46.8'
+      statline.qb_rating = "46.8"
       statline.receptions = 2
       statline.rec_yards = 25
       statline.rec_tds = 1
@@ -87,7 +87,7 @@ RSpec.describe NflData::Statline do
 
     def valid_statline_hash
       {
-        nfl_player_id: '123',
+        nfl_player_id: "123",
         week: 1,
         year: 2014,
         rush_atts: 1,
@@ -99,14 +99,14 @@ RSpec.describe NflData::Statline do
         pass_yards: 100,
         pass_tds: 1,
         ints: 1,
-        qb_rating: '46.8',
+        qb_rating: "46.8",
         receptions: 2,
         rec_yards: 25,
-        rec_tds: 1
+        rec_tds: 1,
       }
     end
 
-    it 'can return itself as hash' do
+    it "can return itself as hash" do
       expect(statline.to_h).to eq(valid_statline_hash)
     end
   end

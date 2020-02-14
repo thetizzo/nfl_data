@@ -1,13 +1,8 @@
 module NflData
-  class Team
-    attr_accessor :name, :short_name, :schedule
-
-    def to_hash
-      {
-        name: name,
-        short_name: short_name,
-        schedule: schedule.nil? ? [] : schedule.to_hash,
-      }
+  Team = Struct.new(:name, :short_name, :schedule) {
+    def to_h
+      self.schedule = schedule.to_a unless schedule.nil?
+      super
     end
-  end
+  }
 end
