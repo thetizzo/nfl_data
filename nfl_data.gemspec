@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "standard", "~> 0.1"
 
   spec.add_dependency "typhoeus", "~> 1.3"
-  spec.add_dependency "nokogiri", "~> 1.6"
+  spec.add_dependency "nokogiri", "~> 1.10"
 end
