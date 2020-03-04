@@ -13,6 +13,7 @@ require "nfl_data/parsers/data/teams"
 require "nfl_data/parsers/parser_helper"
 require "nfl_data/parsers/player_parser"
 require "nfl_data/parsers/statline_parser"
+require "nfl_data/parsers/schedule_parser"
 require "nfl_data/parsers/team_parser"
 
 require "nfl_data/api/player"
