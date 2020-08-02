@@ -1,24 +1,11 @@
-require "nfl_data/version"
-
 require "nokogiri"
 require "open-uri"
 require "json"
+require "typhoeus"
+require "base64"
+require "zeitwerk"
 
-require "nfl_data/models/player"
-require "nfl_data/models/statline"
-require "nfl_data/models/team"
-require "nfl_data/models/schedule"
-
-require "nfl_data/parsers/data/teams"
-require "nfl_data/parsers/parser_helper"
-require "nfl_data/parsers/player_parser"
-require "nfl_data/parsers/statline_parser"
-require "nfl_data/parsers/schedule_parser"
-require "nfl_data/parsers/team_parser"
-
-require "nfl_data/api/player"
-require "nfl_data/api/statline"
-require "nfl_data/api/team"
+Zeitwerk::Loader.for_gem.setup
 
 module NflData
 end

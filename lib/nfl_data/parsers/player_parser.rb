@@ -1,5 +1,3 @@
-require "typhoeus"
-
 module NflData
   class PlayerParser
     include ParserHelper
