@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock", "~> 3.8"
   spec.add_development_dependency "standard", "~> 0.1"
 
-  spec.add_dependency "typhoeus", "~> 1.3"
+  spec.add_dependency "typhoeus", "~> 1.4"
   spec.add_dependency "nokogiri", "~> 1.10"
   spec.add_dependency "zeitwerk", "~> 2.4"
 end
