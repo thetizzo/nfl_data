@@ -22,3 +22,4 @@ mkmf.log
 .ruby-gemset
 spec/examples.txt
 spec/cassettes
+.envrc
