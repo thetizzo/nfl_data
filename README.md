@@ -1,8 +1,16 @@
 # NflData
 
-This gem is for parsing data from NFL.com and returning a JSON blob that can be used for any fantasy related activities you may wish to pursue.
+This gem is for parsing data from NFL.com and returning a JSON blob that can be used
+for any fantasy related activities you may wish to pursue.
 
-This was written by @mikesells and @thetizzo
+**However** since NFL.com has updated their website to a much more difficult to parse version,
+this gem is now going to be using [MySportsFeeds API](https://www.mysportsfeeds.com/data-feeds/) instead.
+
+Thanks to the people at [MySportsFeeds](https://www.mysportsfeeds.com) for providing an affordable
+service for this type of data.  If you would like to use this gem I encourage you to head over to their
+website and sign up for an account.
+
+This gem was written by @mikesells and @thetizzo
 
 [![Gem Version](https://badge.fury.io/rb/nfl_data.svg)](http://badge.fury.io/rb/nfl_data)
 
@@ -19,6 +27,17 @@ And then execute:
 Or install it yourself as:
 
     $ gem install nfl_data
+
+## Configuration
+
+Configuration for [MySportsFeeds API](https://www.mysportsfeeds.com/data-feeds/) credentials
+can be set with the following Environment Variables:
+
+```
+MYSPORTSFEEDS_API_KEY
+MYSPORTSFEEDS_API_HOST
+MYSPORTSFEEDS_API_VERSION
+```
 
 ## Usage
 
