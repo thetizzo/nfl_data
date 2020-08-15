@@ -1,4 +1,6 @@
-RSpec.describe NflData::API::Statline do
+# frozen_string_literal: true
+
+RSpec.describe NflData::Api::Statline do
   subject { described_class }
 
   it "should respond to get_all_by_week_and_year" do

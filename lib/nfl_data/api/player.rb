@@ -1,5 +1,5 @@
 module NflData
-  module API
+  module Api
     class Player
       def initialize
         @parser = PlayerParser.new

@@ -1,4 +1,6 @@
-RSpec.describe NflData::API::Player do
+# frozen_string_literal: true
+
+RSpec.describe NflData::Api::Player do
   subject { described_class }
 
   it "should respond to get_all" do

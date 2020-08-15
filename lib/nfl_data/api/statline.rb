@@ -1,5 +1,5 @@
 module NflData
-  module API
+  module Api
     class Statline
       def initialize
         @parser = StatlineParser.new

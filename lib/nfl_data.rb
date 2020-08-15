@@ -5,7 +5,9 @@ require "typhoeus"
 require "base64"
 require "zeitwerk"
 
-Zeitwerk::Loader.for_gem.setup
+loader = Zeitwerk::Loader.for_gem
+loader.collapse("lib/nfl_data/models")
+loader.setup
 
 module NflData
 end
