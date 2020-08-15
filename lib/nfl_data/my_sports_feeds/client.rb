@@ -3,19 +3,38 @@
 module NflData
   module MySportsFeeds
     class Client
-      attr_reader :base_url
+      attr_reader :base_url, :api_key
 
-      def initialize()
-        @base_url = "#{ENV["MYSPORTSFEEDS_API_HOST"]}/#{ENV["MYSPORTSFEEDS_API_VERSION"]}/pull/nfl"
+      def initialize
+        @api_host = ENV.fetch("MYSPORTSFEEDS_API_HOST")
+        @api_key = ENV.fetch("MYSPORTSFEEDS_API_KEY")
+        @api_version = ENV.fetch("MYSPORTSFEEDS_API_VERSION")
+        @format = "json"
+        @base_url = "#{@api_host}/#{@api_version}/pull/nfl/"
       end
 
-      def request(method, endpoint)
+      def get(endpoint:, params: {})
+        request(method: :get, endpoint: endpoint, params: params)
+      end
+
+      private
+
+      def request(method:, endpoint:, params:)
         request = Typhoeus::Request.new(
-          "#{base_url}#{endpoint}",
-          method: :get,
+          "#{base_url}#{endpoint}.#{@format}",
+          method: method,
+          params: params,
           accept_encoding: "gzip",
-          userpwd: "#{ENV["MYSPORTSFEEDS_API_KEY"]}:MYSPORTSFEEDS"
+          userpwd: "#{api_key}:MYSPORTSFEEDS"
         )
+
+        # request.on_complete do |response|
+        #   if response.success?
+        #   end
+        # end
+
+        response = request.run
+        JSON.parse(response.body)
       end
     end
   end
