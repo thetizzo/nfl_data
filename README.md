@@ -75,7 +75,7 @@ Pull statlines by week and year:
 
 Pull season schedule by year:
 ```ruby
-  NflData::Api::Schedule.season(year: 2014)
+  NflData::Api::Schedule.season(year: 2020)
 ```
 
 ## Contributing

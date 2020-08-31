@@ -1,15 +1,12 @@
 module NflData
-  class Schedule
-    Game = Struct.new(:week, :away_team, :home_team, :start_time, keyword_init: true)
-
-    attr_accessor :games
-
+  Schedule = Struct.new(:games, keyword_init: true) {
     def initialize(games: [])
-      @games = games
+      super
     end
 
-    def to_a
-      games.map(&:to_h)
+    def to_h
+      games.map!(&:to_h)
+      super
     end
-  end
+  }
 end

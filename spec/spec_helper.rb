@@ -1,5 +1,6 @@
 require "nfl_data"
 require "vcr"
+require "rspec/resembles_json_matchers"
 
 VCR.configure do |c|
   c.cassette_library_dir = "spec/cassettes"
@@ -14,6 +15,8 @@ RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end
+
+  config.include RSpec::ResemblesJsonMatchers
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
