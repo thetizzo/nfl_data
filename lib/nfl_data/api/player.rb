@@ -1,34 +1,16 @@
 module NflData
   module Api
     class Player
-      def initialize
-        @parser = PlayerParser.new
+      attr_reader :parser, :feed
+
+      def initialize(parser: Parsers::PlayerParser.new, feed: MySportsFeeds::PlayersFeed.new)
+        @parser = parser
+        @feed = feed
       end
 
-      def get(position)
-        @parser.get_by_position(position).to_json
-      end
-
-      class << self
-        def get_all
-          new.get(:all)
-        end
-
-        def get_quarterbacks
-          new.get(:quarterbacks)
-        end
-
-        def get_runningbacks
-          new.get(:runningbacks)
-        end
-
-        def get_wide_receivers
-          new.get(:wide_receivers)
-        end
-
-        def get_tight_ends
-          new.get(:tight_ends)
-        end
+      def players
+        player_data = feed.feed
+        {players: parser.parse(player_data: player_data).map(&:to_h)}.to_json
       end
     end
   end

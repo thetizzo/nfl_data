@@ -5,11 +5,9 @@ module NflData
     :full_name,
     :position,
     :number,
-    :status,
     :team,
-    :nfl_player_id,
-    :profile_link,
-    :picture_link,
+    :msf_player_id,
+    :image_source,
     keyword_init: true
   )
 end

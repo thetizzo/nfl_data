@@ -48,15 +48,27 @@ To use this gem there are some simple calls that can be made.  Everything should
 Pull players by position:
 
 ```ruby
-  NflData::API::Player.get_all
+  NflData::API::Player.new.players
+```
 
-  NflData::API::Player.get_quarterbacks
+#### Example Response
 
-  NflData::API::Player.get_runningbacks
-
-  NflData::API::Player.get_wide_receivers
-
-  NflData::API::Player.get_tight_ends
+```json
+{
+  "players": [
+    {
+      "first_name": "John",
+      "last_name": "Elway",
+      "full_name": "John Elway",
+      "position": "QB",
+      "number": 7,
+      "team": "DEN",
+      "msf_player_id": 12345,
+      "image_source":""
+    },
+    ...
+  ]
+}
 ```
 
 ### Statlines

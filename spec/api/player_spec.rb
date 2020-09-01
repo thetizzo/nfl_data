@@ -1,25 +1,24 @@
 # frozen_string_literal: true
 
 RSpec.describe NflData::Api::Player do
-  subject { described_class }
+  subject { described_class.new }
 
-  it "should respond to get_all" do
-    expect(subject).to respond_to(:get_all)
-  end
-
-  it "should respond to get_quarterbacks" do
-    expect(subject).to respond_to(:get_quarterbacks)
-  end
-
-  it "should respond to get_runningbacks" do
-    expect(subject).to respond_to(:get_runningbacks)
-  end
-
-  it "should respond to get_wide_receivers" do
-    expect(subject).to respond_to(:get_wide_receivers)
-  end
-
-  it "should respond to get_tight_ends" do
-    expect(subject).to respond_to(:get_tight_ends)
+  it "provides the players in json" do
+    VCR.use_cassette("msf_players") do
+      expect(JSON.parse(subject.players)).to resemble_json(
+        "players": [
+          {
+            "first_name": "B",
+            "last_name": "2Anger2",
+            "full_name": "B 2Anger2",
+            "position": "LB",
+            "number": 19,
+            "team": "JAX",
+            "msf_player_id": 19407,
+            "image_source": "google.com",
+          },
+        ]
+      )
+    end
   end
 end
