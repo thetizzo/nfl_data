@@ -1,75 +1,26 @@
 RSpec.describe NflData::Statline do
   let(:statline) { described_class.new }
 
-  it "has a week" do
-    expect(statline).to respond_to(:week)
-  end
-
-  it "has a year" do
-    expect(statline).to respond_to(:year)
-  end
-
-  it "has rush attempts" do
-    expect(statline).to respond_to(:rush_atts)
-  end
-
-  it "has rush yards" do
-    expect(statline).to respond_to(:rush_yards)
-  end
-
-  it "has rush touchdowns" do
-    expect(statline).to respond_to(:rush_tds)
-  end
-
-  it "has fumbles" do
-    expect(statline).to respond_to(:fumbles)
-  end
-
-  it "has pass completions" do
-    expect(statline).to respond_to(:pass_comp)
-  end
-
-  it "has pass attempts" do
-    expect(statline).to respond_to(:pass_att)
-  end
-
-  it "has pass yards" do
-    expect(statline).to respond_to(:pass_yards)
-  end
-
-  it "has pass touchdowns" do
-    expect(statline).to respond_to(:pass_tds)
-  end
-
-  it "has interceptions" do
-    expect(statline).to respond_to(:ints)
-  end
-
-  it "has QB rating" do
-    expect(statline).to respond_to(:qb_rating)
-  end
-
-  it "has receptions" do
-    expect(statline).to respond_to(:receptions)
-  end
-
-  it "has receiving yards" do
-    expect(statline).to respond_to(:rec_yards)
-  end
-
-  it "has receiving touchdowns" do
-    expect(statline).to respond_to(:rec_tds)
-  end
-
-  it "has an NFL player id" do
-    expect(statline).to respond_to(:nfl_player_id)
-  end
+  it { should respond_to(:rush_atts) }
+  it { should respond_to(:rush_yards) }
+  it { should respond_to(:rush_tds) }
+  it { should respond_to(:fumbles) }
+  it { should respond_to(:pass_comp) }
+  it { should respond_to(:pass_att) }
+  it { should respond_to(:pass_yards) }
+  it { should respond_to(:pass_tds) }
+  it { should respond_to(:ints) }
+  it { should respond_to(:qb_rating) }
+  it { should respond_to(:receptions) }
+  it { should respond_to(:rec_yards) }
+  it { should respond_to(:rec_tds) }
+  it { should respond_to(:msf_game_id) }
+  it { should respond_to(:msf_player_id) }
 
   describe "convert to hash" do
     before do
-      statline.nfl_player_id = "123"
-      statline.week = 1
-      statline.year = 2014
+      statline.msf_player_id = "123"
+      statline.msf_game_id = 17
       statline.rush_atts = 1
       statline.rush_yards = 25
       statline.rush_tds = 1
@@ -87,9 +38,8 @@ RSpec.describe NflData::Statline do
 
     def valid_statline_hash
       {
-        nfl_player_id: "123",
-        week: 1,
-        year: 2014,
+        msf_player_id: "123",
+        msf_game_id: 17,
         rush_atts: 1,
         rush_yards: 25,
         rush_tds: 1,

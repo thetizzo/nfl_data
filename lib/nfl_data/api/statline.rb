@@ -1,30 +1,16 @@
 module NflData
   module Api
     class Statline
-      def initialize
-        @parser = StatlineParser.new
+      attr_reader :parser, :feed
+
+      def initialize(parser: Parsers::StatlineParser.new, feed: MySportsFeeds::WeeklyPlayerGamelogs.new)
+        @parser = parser
+        @feed = feed
       end
 
-      def get(week, year, stat_type)
-        @parser.get(week, year, stat_type).to_json
-      end
-
-      class << self
-        def get_all(week, year)
-          new.get(week, year, :all)
-        end
-
-        def get_passing(week, year)
-          new.get(week, year, :passing)
-        end
-
-        def get_rushing(week, year)
-          new.get(week, year, :rushing)
-        end
-
-        def get_receiving(week, year)
-          new.get(week, year, :receiving)
-        end
+      def statlines(year:, week:)
+        statline_data = feed.feed(season_start_year: year, week: week)
+        {statlines: parser.parse(statline_data: statline_data).map(&:to_h)}.to_json
       end
     end
   end

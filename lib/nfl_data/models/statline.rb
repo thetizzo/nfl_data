@@ -1,7 +1,5 @@
 module NflData
   Statline = Struct.new(
-    :week,
-    :year,
     :rush_atts,
     :rush_yards,
     :rush_tds,
@@ -15,7 +13,8 @@ module NflData
     :receptions,
     :rec_yards,
     :rec_tds,
-    :nfl_player_id,
+    :msf_game_id,
+    :msf_player_id,
     keyword_init: true
   )
 end
