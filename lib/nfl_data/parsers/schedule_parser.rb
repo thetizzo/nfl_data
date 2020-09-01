@@ -1,7 +1,7 @@
 module NflData
   module Parsers
     class ScheduleParser
-      def schedule(schedule_data:)
+      def parse(schedule_data:)
         Schedule.new(games: schedule_data.map { |data| init_game(data) })
       end
 
@@ -10,8 +10,8 @@ module NflData
       def init_game(data)
         Game.new(
           week: data["week"],
-          home_team: data["homeTeam"]["abbreviation"],
-          away_team: data["awayTeam"]["abbreviation"],
+          home_team: data.dig("homeTeam", "abbreviation"),
+          away_team: data.dig("awayTeam", "abbreviation"),
           start_time: data["startTime"]
         )
       end

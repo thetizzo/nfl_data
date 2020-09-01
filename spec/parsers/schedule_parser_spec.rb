@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe NflData::Parsers::ScheduleParser do
-  subject(:parsed) { described_class.new.schedule(schedule_data: schedule_data) }
+  subject(:parsed) { described_class.new.parse(schedule_data: schedule_data) }
 
   let(:schedule_data) do
     [

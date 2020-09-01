@@ -75,7 +75,18 @@ Pull statlines by week and year:
 
 Pull season schedule by year:
 ```ruby
-  NflData::Api::Schedule.season(year: 2020)
+  NflData::Api::Schedule.new.season(year: 2020)
+```
+
+#### Example Response
+
+```json
+{
+  "games": [
+    {"week":1,"away_team":"HOU","home_team":"KC","start_time":"2020-09-10T04:25:00.000Z"}
+    ...
+  ]
+}
 ```
 
 ## Contributing

@@ -2,14 +2,14 @@
 
 module NflData
   module MySportsFeeds
-    class ScheduleFeed
+    class SeasonalGamesFeed
       attr_reader :client
 
       def initialize(client: MySportsFeeds::Client.new)
         @client = client
       end
 
-      def seasonal_games(season_start_year:)
+      def feed(season_start_year:)
         response = client.get(endpoint: "#{season_slug(season_start_year)}/games")
         response["games"].map { |data| data["schedule"] }
       end
