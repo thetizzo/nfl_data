@@ -18,7 +18,7 @@ RSpec.describe NflData::MySportsFeeds::PlayersFeed do
             "jerseyNumber": 38,
             "currentTeam": {
               "id": 67,
-              "abbreviation": "TEN",
+              "abbreviation": "TEN"
             },
             "currentRosterStatus": "ROSTER",
             "currentInjury": nil,
@@ -36,12 +36,12 @@ RSpec.describe NflData::MySportsFeeds::PlayersFeed do
             "socialMediaAccounts": Array,
             "currentContractYear": nil,
             "drafted": nil,
-            "externalMappings": Array,
+            "externalMappings": Array
           },
           "teamAsOfDate": {
             "id": 67,
-            "abbreviation": "TEN",
-          },
+            "abbreviation": "TEN"
+          }
         }
       )
     end

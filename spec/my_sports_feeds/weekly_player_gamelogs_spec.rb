@@ -12,18 +12,18 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
             "week": 17,
             "startTime": "2017-12-31T21:25:00.000Z",
             "awayTeamAbbreviation": "JAX",
-            "homeTeamAbbreviation": "TEN",
+            "homeTeamAbbreviation": "TEN"
           },
           "player": {
             "id": 8640,
             "firstName": "Marcus",
             "lastName": "Mariota",
             "position": "QB",
-            "jerseyNumber": 8,
+            "jerseyNumber": 8
           },
           "team": {
             "id": 67,
-            "abbreviation": "TEN",
+            "abbreviation": "TEN"
           },
           "stats": {
             "passing": {
@@ -42,7 +42,7 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "pass40Plus": 1,
               "passSacks": 3,
               "passSackY": 18,
-              "qbRating": 92.2,
+              "qbRating": 92.2
             },
             "rushing": {
               "rushAttempts": 10,
@@ -54,7 +54,7 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "rush1stDownsPct": 40,
               "rush20Plus": 0,
               "rush40Plus": 0,
-              "rushFumbles": 1,
+              "rushFumbles": 1
             },
             "receiving": {
               "targets": 0,
@@ -66,7 +66,7 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "rec1stDowns": 0,
               "rec20Plus": 0,
               "rec40Plus": 0,
-              "recFumbles": 0,
+              "recFumbles": 0
             },
             "tackles": {
               "tackleSolo": 0,
@@ -74,7 +74,7 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "tackleAst": 0,
               "sacks": 0,
               "sackYds": 0,
-              "tacklesForLoss": 0,
+              "tacklesForLoss": 0
             },
             "interceptions": {
               "interceptions": 0,
@@ -86,7 +86,7 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "stuffs": 0,
               "stuffYds": 0,
               "safeties": 0,
-              "kB": 0,
+              "kB": 0
             },
             "fumbles": {
               "fumbles": 1,
@@ -96,7 +96,7 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "fumOppRec": 0,
               "fumRecYds": -74,
               "fumTotalRec": 0,
-              "fumTD": 0,
+              "fumTD": 0
             },
             "kickoffReturns": {
               "krRet": 0,
@@ -107,7 +107,7 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "kr20Plus": 0,
               "kr40Plus": 0,
               "krFC": 0,
-              "krFum": 0,
+              "krFum": 0
             },
             "puntReturns": {
               "prRet": 0,
@@ -118,10 +118,10 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "pr20Plus": 0,
               "pr40Plus": 0,
               "prFC": 0,
-              "prFum": 0,
+              "prFum": 0
             },
             "miscellaneous": {
-              "gamesStarted": 1,
+              "gamesStarted": 1
             },
             "twoPointAttempts": {
               "twoPtAtt": 0,
@@ -130,9 +130,9 @@ RSpec.describe NflData::MySportsFeeds::WeeklyPlayerGamelogs do
               "twoPtPassMade": 0,
               "twoPtPassRec": 0,
               "twoPtRushAtt": 0,
-              "twoPtRushMade": 0,
-            },
-          },
+              "twoPtRushMade": 0
+            }
+          }
         }
       )
     end

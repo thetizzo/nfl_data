@@ -12,15 +12,15 @@ RSpec.describe NflData::MySportsFeeds::SeasonalGamesFeed do
         "endedTime": nil,
         "awayTeam": {
           "id": 65,
-          "abbreviation": "IND",
+          "abbreviation": "IND"
         },
         "homeTeam": {
           "id": 48,
-          "abbreviation": "BUF",
+          "abbreviation": "BUF"
         },
         "venue": {
           "id": 46,
-          "name": "New Era Field",
+          "name": "New Era Field"
         },
         "venueAllegiance": "NEUTRAL",
         "scheduleStatus": "NORMAL",
@@ -30,7 +30,7 @@ RSpec.describe NflData::MySportsFeeds::SeasonalGamesFeed do
         "attendance": nil,
         "officials": Array,
         "broadcasters": Array,
-        "weather": nil,
+        "weather": nil
       )
     end
   end

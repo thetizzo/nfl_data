@@ -52,7 +52,7 @@ RSpec.describe NflData::Statline do
         qb_rating: "46.8",
         receptions: 2,
         rec_yards: 25,
-        rec_tds: 1,
+        rec_tds: 1
       }
     end
 

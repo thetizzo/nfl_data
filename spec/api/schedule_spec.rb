@@ -11,8 +11,8 @@ RSpec.describe NflData::Api::Schedule do
             "week": 1,
             "away_team": "KC",
             "home_team": "DEN",
-            "start_time": Time.now,
-          },
+            "start_time": Time.now
+          }
         ]
       )
     end

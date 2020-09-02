@@ -21,8 +21,8 @@ RSpec.describe NflData::Parsers::ScheduleParser do
         "attendance" => nil,
         "officials" => [],
         "broadcasters" => ["NBC"],
-        "weather" => nil,
-      },
+        "weather" => nil
+      }
     ]
   end
 

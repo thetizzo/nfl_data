@@ -15,8 +15,8 @@ RSpec.describe NflData::Api::Player do
             "number": 19,
             "team": "JAX",
             "msf_player_id": 19407,
-            "image_source": "google.com",
-          },
+            "image_source": "google.com"
+          }
         ]
       )
     end

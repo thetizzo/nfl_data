@@ -31,7 +31,7 @@ RSpec.describe NflData::Player do
         number: 7,
         team: "Broncos",
         msf_player_id: "123",
-        image_source: "google.com",
+        image_source: "google.com"
       }
     end
 

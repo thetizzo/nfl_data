@@ -22,8 +22,8 @@ RSpec.describe NflData::Api::Statline do
             "rec_yards": 0,
             "rec_tds": 0,
             "msf_game_id": 51465,
-            "msf_player_id": 6826,
-          },
+            "msf_player_id": 6826
+          }
         ]
       )
     end

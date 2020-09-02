@@ -7,10 +7,10 @@ RSpec.describe NflData::Parsers::StatlineParser do
     [
       {
         "game" => {
-          "id" => 40606,
+          "id" => 40606
         },
         "player" => {
-          "id" => 8640,
+          "id" => 8640
         },
         "stats" => {
           "passing" => {
@@ -18,26 +18,26 @@ RSpec.describe NflData::Parsers::StatlineParser do
             "passCompletions" => 12,
             "passYards" => 134,
             "passTD" => 2,
-            "qbRating" => 92.2,
+            "qbRating" => 92.2
           },
           "rushing" => {
             "rushAttempts" => 10,
             "rushYards" => 60,
-            "rushTD" => 0,
+            "rushTD" => 0
           },
           "receiving" => {
             "receptions" => 5,
             "recYards" => 30,
-            "recTD" => 3,
+            "recTD" => 3
           },
           "interceptions" => {
-            "interceptions" => 0,
+            "interceptions" => 0
           },
           "fumbles" => {
-            "fumbles" => 1,
-          },
-        },
-      },
+            "fumbles" => 1
+          }
+        }
+      }
     ]
   end
 

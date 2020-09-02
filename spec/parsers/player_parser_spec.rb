@@ -15,7 +15,7 @@ RSpec.describe NflData::Parsers::PlayerParser do
           "jerseyNumber" => 38,
           "currentTeam" => {
             "id" => 67,
-            "abbreviation" => "TEN",
+            "abbreviation" => "TEN"
           },
           "currentRosterStatus" => "ROSTER",
           "currentInjury" => nil,
@@ -33,13 +33,13 @@ RSpec.describe NflData::Parsers::PlayerParser do
           "socialMediaAccounts" => [],
           "currentContractYear" => nil,
           "drafted" => nil,
-          "externalMappings" => [],
+          "externalMappings" => []
         },
         "teamAsOfDate" => {
           "id" => 67,
-          "abbreviation" => "TEN",
-        },
-      },
+          "abbreviation" => "TEN"
+        }
+      }
     ]
   end
 
