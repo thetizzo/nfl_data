@@ -45,7 +45,7 @@ To use this gem there are some simple calls that can be made.  Everything should
 
 ### Players
 
-Pull players by position:
+Pull players:
 
 ```ruby
   NflData::API::Player.new.players
@@ -76,11 +76,34 @@ Pull players by position:
 Pull statlines by week and year:
 
 ```ruby
-  NflData::API::Statline.get_passing(1, 2014)
+  NflData::API::Statline.new.statlines(year: 2020, week: 1)
+```
 
-  NflData::API::Statline.get_rushing(1, 2014)
+#### Example Response
 
-  NflData::API::Statline.get_receiving(1, 2014)
+```json
+{
+  "statlines": [
+    {
+      "rush_atts": 2,
+      "rush_yards": 11,
+      "rush_tds": 1,
+      "fumbles": 0,
+      "pass_comp": 11,
+      "pass_att": 23,
+      "pass_yards": 123,
+      "pass_tds": 2,
+      "ints": 1,
+      "qb_rating": 92.6,
+      "receptions": 3,
+      "rec_yards": 10,
+      "rec_tds": 0,
+      "msf_game_id": 51465,
+      "msf_player_id": 6826
+    }
+    ...
+  ]
+}
 ```
 
 ### Schedule
