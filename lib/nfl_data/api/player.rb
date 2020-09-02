@@ -8,8 +8,8 @@ module NflData
         @feed = feed
       end
 
-      def players
-        player_data = feed.feed
+      def players(position: nil)
+        player_data = feed.feed(position: position)
         {players: parser.parse(player_data: player_data).map(&:to_h)}.to_json
       end
     end

@@ -9,8 +9,9 @@ module NflData
         @client = client
       end
 
-      def feed
-        client.get(endpoint: "players")["players"]
+      def feed(position: nil)
+        params = {position: position}
+        client.get(endpoint: "players", params: params)["players"]
       end
     end
   end

@@ -39,16 +39,25 @@ MYSPORTSFEEDS_API_HOST
 MYSPORTSFEEDS_API_VERSION
 ```
 
+### MySportsFeeds API Docs
+
+https://www.mysportsfeeds.com/data-feeds/api-docs/
+
+I've written this to use >= v2.1 of the MSF API.
+
 ## Usage
 
-To use this gem there are some simple calls that can be made.  Everything should return JSON.
+To use this gem there are some simple calls that can be made.  Everything will return JSON.
 
 ### Players
 
-Pull players:
+Pull players by position. Not passing a position param will pull all players.
+
+Position param is passed through to MySportsFeeds and can be any value they accept.  Please see
+their docs above.
 
 ```ruby
-  NflData::API::Player.new.players
+  NflData::API::Player.new.players(position: "qb")
 ```
 
 #### Example Response
