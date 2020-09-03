@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-resembles_json_matchers", "~> 0.9"
   spec.add_development_dependency "vcr", "~> 4.0.0"
   spec.add_development_dependency "webmock", "~> 3.8"
-  spec.add_development_dependency "standard", "~> 0.1"
+  spec.add_development_dependency "standard", "~> 0.5"
 
   spec.add_dependency "nokogiri", "~> 1.10"
   spec.add_dependency "typhoeus", "~> 1.4"
