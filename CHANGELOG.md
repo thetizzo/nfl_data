@@ -1,3 +1,7 @@
+## 0.1.1 / 2020-09-04
+
+* Zeitwerk compatibility updates for usage with Rails
+
 ## 0.1.0 / 2020-08-31
 
 * No more NFL.com parsing, using MySportsFeeds API instead. This will require users to acquire their own MySportsFeeds accounts and API tokens. Please see the README or [the MySportsFeeds website](https://www.mysportsfeeds.com for more details.
