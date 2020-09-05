@@ -7,40 +7,41 @@ RSpec.describe NflData::MySportsFeeds::PlayersFeed do
 
   it "requests the players" do
     VCR.use_cassette("msf_players") do
-      expect(subject.feed.first).to resemble_json(
+      expect(subject.feed.find { |player| player.dig("player", "id") == 6826 }).to resemble_json(
         {
-          "player": {
-            "id": 13507,
-            "firstName": "Manny",
-            "lastName": "Abad",
-            "primaryPosition": "DB",
-            "alternatePositions": Array,
-            "jerseyNumber": 38,
-            "currentTeam": {
-              "id": 67,
-              "abbreviation": "TEN"
-            },
-            "currentRosterStatus": "ROSTER",
-            "currentInjury": nil,
-            "height": nil,
-            "weight": nil,
-            "birthDate": "1993-11-23",
-            "age": 24,
-            "birthCity": nil,
-            "birthCountry": nil,
-            "rookie": false,
-            "highSchool": nil,
-            "college": nil,
-            "handedness": nil,
-            "officialImageSrc": nil,
-            "socialMediaAccounts": Array,
-            "currentContractYear": nil,
-            "drafted": nil,
-            "externalMappings": Array
+          "player" => {
+            "id" => 6826,
+            "firstName" => "Ameer",
+            "lastName" => "Abdullah",
+            "primaryPosition" => "RB",
+            "alternatePositions" => [],
+            "jerseyNumber" => 31,
+            "currentTeam" => {"id" => 63, "abbreviation" => "MIN"},
+            "currentRosterStatus" => "ROSTER",
+            "currentInjury" => nil,
+            "height" => "5'9\"",
+            "weight" => 203,
+            "birthDate" => "1993-06-13",
+            "age" => 27,
+            "birthCity" => "Mobile, AL",
+            "birthCountry" => "USA",
+            "rookie" => false,
+            "highSchool" => nil,
+            "college" => "Nebraska",
+            "handedness" => nil,
+            "officialImageSrc" => "http://static.nfl.com/static/content/public/static/img/fantasy/transparent/200x200/ABD647726.png",
+            "socialMediaAccounts" => [],
+            "currentContractYear" => nil,
+            "drafted" => {"year" => 2015, "team" => {"id" => 61, "abbreviation" => "DET"},
+                          "pickTeam" => {"id" => 61, "abbreviation" => "DET"},
+                          "round" => 2,
+                          "roundPick" => 22,
+                          "overallPick" => 54},
+            "externalMappings" => [{"source" => "NFL.com Stats Leaders", "id" => "ABD647726"}]
           },
-          "teamAsOfDate": {
-            "id": 67,
-            "abbreviation": "TEN"
+          "teamAsOfDate" => {
+            "id" => 63,
+            "abbreviation" => "MIN"
           }
         }
       )
