@@ -20,7 +20,8 @@ module NflData
           number: data["jerseyNumber"],
           team: data.dig("currentTeam", "abbreviation").to_s,
           msf_player_id: data["id"],
-          image_source: data["officialImageSrc"].to_s
+          image_source: data["officialImageSrc"].to_s,
+          current_roster_status: data["currentRosterStatus"]
         )
       end
     end

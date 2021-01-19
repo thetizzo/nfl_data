@@ -8,6 +8,7 @@ module NflData
     :team,
     :msf_player_id,
     :image_source,
+    :current_roster_status,
     keyword_init: true
   )
 end

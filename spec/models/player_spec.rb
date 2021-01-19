@@ -9,6 +9,7 @@ RSpec.describe NflData::Player do
   it { should respond_to(:team) }
   it { should respond_to(:msf_player_id) }
   it { should respond_to(:image_source) }
+  it { should respond_to(:current_roster_status) }
 
   describe "convert to hash" do
     before do
@@ -20,6 +21,7 @@ RSpec.describe NflData::Player do
       player.team = "Broncos"
       player.msf_player_id = "123"
       player.image_source = "google.com"
+      player.current_roster_status = nil
     end
 
     def valid_player_hash
@@ -31,7 +33,8 @@ RSpec.describe NflData::Player do
         number: 7,
         team: "Broncos",
         msf_player_id: "123",
-        image_source: "google.com"
+        image_source: "google.com",
+        current_roster_status: nil
       }
     end
 
